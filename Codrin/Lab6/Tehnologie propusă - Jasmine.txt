@@ -1,0 +1,19 @@
+Nume tehnologie: Jasmine
+
+Descriere: Jasmine este varianta upgraded de la JsUnit, care era framework-ul de testare pentru JavaScript
+la începutul anilor 2000. Practic, e un BDD (Behavior Driven Development) testing framework pentru JS și e foarte
+influențat de alte framework-uri de testare ca ScrewUnit, JSSpec, Jspec și RSpec.
+
+Avantaje : 
+-este o tehnologie independentă de browser, DOM (Document Object Model) sau orice alt framework JavaScript
+-este open-source
+-rulează pe orice platformă JS, și nu depinde nici de aplicație sau IDE fiindcă are inbuilt test runner
+-are o sintaxă „easy-to-read” după cum se laudă dezvoltatorii de la Pivotal Labs
+-suportă front-end testing prin extensia Jasmine-jQuery
+
+Dezavantaje:
+-e mai mult axat pe Behavior Driven Development, deși e complet capabil de test driven development
+
+Raport: Pare foarte facil de utilizat, mai ales că sintaxa e de așa natură încât poate fi înțeleasă de oricine,
+e foarte high-level și orice script apare ca o „poveste”.
+
