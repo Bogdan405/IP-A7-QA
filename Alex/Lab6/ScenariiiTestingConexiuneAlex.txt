@@ -1,0 +1,11 @@
+---- Utilizator scire mesaj si pierde conexiune inainte sa apese trimitere
+---- Aplicatia Pierde conexiunea cu un client dupa ce acesta a trimis datele de log in
+---- un utilizator pierde conexiunea dupa ce vizualizeaza un mesaj
+---- Aplicatia pierde conexiunea cand confirma alegerea coordonatorului
+---- Aplicatia pierde conexiunea cand intra pe profilul coordonatorului dorit
+---- Aplicatia pierde conexiunea cand Student acceseaza sectiunea „Proiecte licență”
+---- Profesor refuza propunerea de licenta iar elevului nu ii apare
+---- In timp ce profesorul incarca licenta acesta pierde conexiunea la aplicatie(internet/curent/crash aplicatie/SO)
+---- Un utilizator da logout dar totusi inca apare logat in baza de date
+---- Mesajul se corupe in timpul transmiterii
+---- Mesajul se pierde in timpul transmiterii
