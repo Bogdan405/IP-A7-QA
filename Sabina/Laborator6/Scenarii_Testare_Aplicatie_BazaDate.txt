@@ -1,0 +1,36 @@
+Aplicația dă crash imediat după login, iar la login utilizatorul este deja logat
+
+Studentul se autentifica_ca_student dar aplicatia returneaza/trimite autentifica_ca_profesor
+
+Aplicatia case or non case sensitive la login
+
+Autentificarea esueaza din cauza login-ului cu un cont inexistent, 
+dar aplicatia realizeaza totusi autentificarea cu un cont
+
+Se pot crea conturi cu acelasi nume(when its case sensitive)
+
+Nu poti crea cont nou daca numele de utilizator a fost folosit si schimbat sau sters
+
+Aplicatia propune destinatari care nu au fost accesati anterior
+
+Mesajele nu se filtrează deloc
+
+Utilizator se poate loga cu alta parola decat a lui
+
+La crearea contului Numele si Parola sunt identice
+
+Utilizator incerca sa puna cod sql la nume/parola
+
+Utlilizator incearca sa puna sute de caractere la inregistrare nume
+
+Numele depaseste limita de caractere la inregistrare iar inregistrarea are succes
+
+Parola depaseste un anumit numar de caractere la inregistrare iar inregistrarea are succes
+
+User inearca sa creeze cont cu numele vid / din spatii/ caractere non alfanumerice
+
+User incerca sa creeze cont cu parola din 1 caracter un spatiu sau nimic
+
+Baza de date suprascrie date deja existente la crearea unui cont
+
+Un utilizator da logout dar totusi inca apare logat in baza de date
