@@ -1,0 +1,102 @@
+
+------ student poate fi inscris la doi tutori
+
+----se pot trimite mesaje fara a avea subiect&continut
+
+----- student nu are tutore
+----- mesaje cu caractere non-supported
+------ nume/parola cu caractere non-supported
+
+--- Aplicația dă crash imediat după login, iar la login utilizatorul este deja logat
+--- Studentul se autentifica_ca_student dar aplicatia returneaza/trimite autentifica_ca_profesor
+
+------student incearca sa se autentifice ca profesor
+------- profesor ca student
+
+--- Dupa un numar prea mare de incercari de logare, login crapa
+---- profesor poate sa aleaga tutore
+
+------ toti studentii incerca sa se logheze simultan
+------toti studentii trimit cerere la aceiasi licenta simultan
+
+---- user ul se poate loga chiar daca parola este gresita
+
+---- aplicatia case or non case sensitive la login]
+
+-------user1 si user2 incerca sa isi puna acelasi nume de utlizator
+
+--- Baza de date suprascrie date deja existente la crearea unui cont
+--- Autentificarea esueaza din cauza login-ului cu un cont inexistent, 
+dar aplicatia realizeaza totusi autentificarea cu un cont
+
+---- se pot crea conturi cu acelasi nume(when its case sensitive)
+
+------- user incerca sa creeze cont cu parola din 1 caracter un spatiu sau nimic
+------- user inearca sa creeze cont cu numele vid / din spatii/ caractere non alfanumerice
+
+----parola depaseste un anumit numar de caractere la inregistrare iar inregistrarea are succes
+----numele depaseste limita de caractere la inregistrare iar inregistrarea are succes
+----un utilizator isi poate trimite singur mesaj
+
+-------utlilizator incearca sa puna sute de caractere la inregistrare nume
+
+---- in timp ce profesorul incarca licenta acesta pierde conexiunea la aplicatie(internet/curent/crash aplicatie/SO)
+
+------- utilizator incerca sa puna cod sql la nume/parola
+
+----la crearea contului Numele si Parola sunt identice
+
+----un utilizator da logout dar totusi inca apare logat in baza de date
+
+-----utilizator se poate loga cu alta parola decat a lui
+
+----numele are spatii la final(ex:"asdf     ")
+
+----- utilizator poate sa isi schimbe statusul (loagat/profesor/student) folosind adresa url modificata
+------- utilizator poate citi date ale altui utilizator
+------mesaj public nu e disponibil tuturor utilizatorilor
+
+---- profesor poate tutoria alt profesor
+
+------ utilizatori noi nu pot vede mesaje publice vechi
+------utilizatori pot trimite mesaje private la utilizator non-existent
+
+Utilizatorul trimite un mesaj care nu ajunge la destinatar
+
+---- utilizatorii trimit fisiere prea mari iar continutul se pierde
+
+------utilizatori pot pune url-uri periculoase in mesaje/postari
+
+---- nu poti creea cont nou daca parola a mai fost utilizata
+
+----- utilizatori pot pune exe-uri sau alte file periculoase in postari
+------nu poti crea cont nou daca numele de utilizator a fost folosit si schimbat sau sters
+
+----mesajul se corupe in timpul transmiterii
+----mesajul se pierde in timpul transmiterii
+
+-----mesajul se transmite partial
+
+----mesajul apare ca trimis la sender dar nu apare in inbox la reciever
+
+----Aplicatia propune destinatari care nu au fost accesati anterior
+----Aplicatia poate trimite mesaje la destinatari inexistenți
+
+---- se poate incarca orice continut media, nu doar imagini (png, jpg, nef)
+-
+
+--- filtrarea mesajelor are loc după alt criteriu decât cel selectat
+
+--- mesajele nu se filtrează deloc
+
+----un elev poate alege ca tutore un profesor care si-a atins limita
+---- un tutore poate accepta studenti dupa limita admisa
+---- limita impusa de un tutore nu este acceptata
+
+---profesorul se autentifică sau crează cont dar primește doar drepturi de student
+
+---- limita impusa este intr-un format gresit
+
+----student își face cont tip profesor
+
+---- limita impusa de un tutore nu este verificata corect(limita = 4, nu mai primeste cereri dupa 3)

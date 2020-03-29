@@ -1,0 +1,16 @@
+--- Student are deja un coordonator si inca poate alege un coordonator
+--- Student accesează secțiunea „Proiecte licență” și nu se afișează nimic
+--- Student se autentifica_ca_student dar aplicatia returneaza/trimite autentifica_ca_profesor
+--- Student poate fi înscris la mai mulți Tutore
+--- Student nu are Tutore asociat
+--- Student se autentifică ca Profesor, sau Profesor ca Student
+--- Profesor poate să aleagă și el un Profesor pentru licență
+--- Tutorele are asociat și el un Tutore
+--- Studenții se autentifică simultan
+--- toți Studenții trimit cerere la aceeași licență simultan
+--- în timp ce profesorul încarcă licența, acesta pierde conexiunea la aplicație
+--- Student poate alege ca coordonator de licență un Profesor care și-a atins limita
+--- un Profesor poate încă accepta studenți după limita admisă
+--- limita impusă de un coordonator de licență nu este acceptată, sau e eronat introdusă și acceptată
+
+ 
