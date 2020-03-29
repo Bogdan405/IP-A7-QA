@@ -1,4 +1,4 @@
-  Jamine este un cadru de testare open-source pentru JavaScript. Acesta isi propune sa ruleze pe orice platforma activata cu JavaScript, sa nu patrunda in aplicatie si nici IDE si sa aiba o sintaxa usor de citit.
+  Jasmine este un cadru de testare open-source pentru JavaScript. Acesta isi propune sa ruleze pe orice platforma activata cu JavaScript, sa nu patrunda in aplicatie si nici IDE si sa aiba o sintaxa usor de citit.
   Site:https://jasmine.github.io
 
   Avantaje: Codul se poate simplifica prin crearea unor dubluri de teste(test doubles), datorita spies-urilor
