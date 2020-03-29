@@ -1,0 +1,20 @@
+Nume tehnologie: Karma
+
+Descriere: Test runner pentru JS care rulează pe Node.js. 
+Construit pentru testarea AngularJS sau orice alt proiect JavaScript.
+
+Avantaje:
+
+-compatibil cu Jasmine, Mocha, QUnit etc;
+-poate rula teste nu doar în orice browser, dar și pe orice dispozitiv: desktop, smartphone, tabletă etc.
+-se integrează și cu alte pachete;
+-are suport excelent pentru plugin-uri;
+
+Dezavantaje:
+ 
+-desi tot ce este necesar pentru a rula Karma se află pe site-ul lor oficial, nu au foarte multă documentație și chiar dezvoltatorii 
+te trimit către Google sau Stack Overflow;
+-dacă nu folosești AngularJS, nu e chiar cea mai de preferat tehnlogie;
+
+Raport: E posibil să putem face uz de această tehnologie, având în vedere că este
+foarte recomandată în cadrul proiectelor AGILE sau pentru alte medii de integrare continuă, cum este și proiectul de față.  
