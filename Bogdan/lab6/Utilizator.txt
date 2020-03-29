@@ -1,0 +1,50 @@
+
+
+--- Dupa un numar prea mare de incercari de logare, aplicatia cedeaza nu mai functioneaza
+
+---- utilizatorul se poate loga chiar daca parola este gresita
+
+---- aplicatia case or non case sensitive la login
+
+-------user1 si user2 incerca sa isi puna acelasi nume de utlizator
+
+---- se pot crea conturi cu acelasi nume(when its case sensitive)
+
+------- utilizator creeaza cont cu parola din 1 caracter un spatiu vid / din spatii/ caractere non alfanumerice sau nimic, caractere non-supported
+
+------- user inearca sa creeze cont cu numele vid / din spatii/ caractere non alfanumerice
+
+----parola depaseste un anumit numar de caractere la inregistrare iar inregistrarea are succes
+
+----numele depaseste limita de caractere la inregistrare iar inregistrarea are succes
+
+-------utlilizator incearca sa puna sute de caractere la inregistrare nume
+
+------- utilizator incerca sa puna cod sql la nume/parola
+
+----un utilizator da logout dar totusi inca apare logat in baza de date
+
+----la crearea contului Numele si Parola sunt identice
+
+-----utilizator se poate loga cu alta parola decat a lui
+
+----numele are spatii la final(ex:"asdf     ")
+
+----- utilizator poate sa isi schimbe statusul (loagat/profesor/student) folosind adresa url modificata
+
+------- utilizator poate citi date ale altui utilizator
+
+------utilizatori pot trimite mesaje private la utilizator non-existent
+
+---- nu poti creea cont nou daca parola a mai fost utilizata
+
+
+
+
+
+
+
+
+
+
+
