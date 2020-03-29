@@ -1,0 +1,22 @@
+Nume tehnologie: Selenium
+
+Descriere: Este un framework portabil pentru testarea de web applications, 
+e scris in Java și vine din partea celor de la Apache. 
+
+Avantaje: 
+-open source;
+-scrierea de teste funcționale se poate face fără a învăța limbaj specific de testing, și se face în 
+propriul mediu de dezvoltare, numit Selenium IDE;
+-propune Selenese, un domain-specific language în care se pot scrie teste în orice limbaj popular
+de programare: C#, Java, Groovy, PHP, Scala, Python...
+-Selenium IDE vine ca extensie pentru Google Chrome și Firefox 
+
+Dezavantaje:
+-pentru a folosi aceasta tehnologie de testare în limbajul preferat, tester-ul trebuie totuși să fie
+pregătit adecvat în acel limbaj, deci nu e destul de beginner friendly
+-nu există suport dedicat din partea dezvoltatorilor, deci tot comunitatea va oferi cel mai mult
+ajutor cu întrebări sau dificulăți în folosire;
+-nu are unelte inbuilt de a genera rapoarte, lucru care ar trebui să fie făcut manual; bănuiesc că în cadrul
+proiectului, rapoartele sunt necesare pentru a putea comunica eficient între departamente și între membrii QA;
+dacă alegem această tehnologie, putem totuși să o folosim combinând funcționalități din plug-in-urile Junit și TestNG
+-nu e foarte user-friendly („the testers must use Selenium properly to overcome some of its prominent limitations”)
