@@ -1,0 +1,16 @@
+1.  Se pot trimite mesaje fara a avea subiect si/sau continut.
+2.  Mesajele contin caractere non-supported.
+3.  Un utilizator isi poate trimite singur mesaj.
+4.  In timp ce profesorul incarca licenta, acesta pierde conexiunea la aplicatie.
+5.  Un mesaj public nu e disponibil tuturor utilizatorilor.
+6.  Un utilizator nou nu poate vedea mesaje publice vechi.
+7.  Utilizatorii pot trimite mesaje private la utilizatori non-existenti.
+8.  Utilizatorul trimite un mesaj care nu ajunge la destinatar.
+9.  Utilizatorii trimit fisiere prea mari iar continutul se pierde.
+10. Utilizatori pot pune url-uri/exe-uri/file periculoase in mesaje/postari.
+11. Mesajul se trimite partial.
+12. Mesajul apare ca trimis la sender dar nu apare in inbox la reciever.
+13. Aplicatia propune destinatari care nu au fost accesati anterior.
+14. Aplicatia poate trimite mesaje la destinatari inexistenți.
+15. Filtrarea mesajelor are loc după alt criteriu decât cel selectat.
+16. Mesajele nu se filtrează deloc.
