@@ -1,0 +1,75 @@
+1. Studentul se poate autentifica cu drepturi de Profesor sau vice-versa;
+
+Un user cu un cont creat de student se autentifica, folosind user-ul si parola sa, insa Baza de Date, ori la crearea contului,
+ori in urma unor interogari efectuate eronat, asociaza drepturi de Profesor si/sau Tutore acestui user. Totdata, un user care ar
+trebui sa aiba drepturi de Profesor si/sau Tutore, la autentificare, primeste drepturi de Student si functionalitatile asociate.
+
+   Proces de testare: 
+        1. Login cu datele contului preluate din cache/introduse la deschiderea aplicatiei;
+        2. Se face apel la baza de date, se verifica data datele introduse exista:
+                A. Datele nu exista, login-ul se face (test esuat);
+                B. Datele exista, login-ul nu se face (test esuat);
+                C. Datele exista, login-ul se face (test trecut);
+                D. Datele nu exista, login-ul nu se face (test trecut);
+        3. Baza de date raspunde la cererea user-ului:
+                A. Baza de date returneaza corect drepturile (test trecut);
+                B. Baza de date returneaza un alt drept decat cel asociat (test esuat);
+
+
+2. Profesor poate sa aleaga si el un Profesor (+ are un tutore asociat)
+
+E o consecinta a bug-ului anterior. Profesor primeste optiunea de a alege un Profesor pentru licenta; desi e contraintuitiv pentru un user cu drept de Profesor sa
+isi aleaga un coordonator, daca aceasta operatie este disponibila din interfata livrata la Profesor, avand in vedere ca aceasta
+clasa nu are atribute si metode specifice functionalitatii, mutiple erori pot aparea si la nivel de aplicatie, si in baza de date. 
+    
+     Proces de testare:
+        1. Profesor acceseaza interfata livrata de aplicatie;
+        2. Profesor are posibilitatea de a face mai multe operatiuni;
+        3. Se incearca alegerea unui profesor coordonator:
+                A. Cererea este respinsa (test trecut);
+                B. Profesor primeste un Profesor coordonator (test esuat);
+        4. Se verifica asocierea cu un Tutore:
+                A. Profesor are asociat un Tutore (test esuat);
+                B. user-ului de tip Profesor nu i se poate asocia un Tutore;
+        (5. (daca e si Tutore) Se incearca a deveni Tutore pentru un Profesor - fail/succes)
+
+
+3. Profesorul accepta cereri dupa limita admisa;
+
+Profesor isi poate seta o limita pentru cate lucrari de licenta poate coordona. Un profesor a acceptat deja lucrari de licenta si s-a ajuns la limita,
+insa la primirea de noi cereri, inca le poate accepta, iar acestea sunt stocate si afisate ca orice alte lucrari de licenta deja acceptate.
+    
+        
+     Proces de testare:
+        1. Mai multi Studenti trimit cereri catre Profesor;
+        2. Profesorul accepta/respinge cereri;
+        3. Exista o variabila Counter care retine cate astfel de cereri au fost acceptate, atribut a clasei Profesor;
+        4. Counter = Limit;
+        5. Cereri inca sunt trimise;
+                A. Cereri inca sunt acceptate (test esuat);
+                B. Cererile sunt respinse (test trecut) --> studentii nu mai pot trimite cereri - butonul de request poate fi greyed out la ei pe interfata, de ex;
+
+4. Exista tutori/profesori multipli pentru un singur student:
+
+Un student poate avea un singur Profesor coordonator si un singur Tutore asociat. In mod normal, la crearea contului/autentificare, Studentul primeste automat un Tutore,
+si nu are niciun Profesor coordonator asociat. Dupa ce isi alege un profesor coordonator, studentul nu mai poate alege un profesor coordonator.
+
+      Proces de testare:
+         1. Studentul alege un profesor coordonator si ii este acceptata cererea;
+         2. Studentul mai alege un profesor coordonator:
+                A. Cererea noua este acceptata (test esuat);
+                B. Cererea noua este respinsa (test trecut); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
