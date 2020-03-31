@@ -1,0 +1,54 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+######################################
+LAB6 ORGANISATION GOALS 
+######################################
+
+@PM & HR
+-Sincronizare tema intre interfata grafica cu siteul de prezentare
+-Facilitare continua a aplicatiei
+-Stabilire Protocol Comunicare Back-End = Front-End
+-Pregatirea unui sistem de comunicare a erorilor+validarilor Back-End = Front-End 
+
+@Front End
+-Sincronizare tema intre interfata grafica cu siteul de prezentare
+-Arhiva Nodejs+Express de vazut pe drive
+-Stabilire Protocol Comunicare Back-End = Front-End
+-Pregatirea unui sistem de comunicare a erorilor+validarilor Back-End = Front-End 
+-Propuneri design pentru interfata/elemente ale acesteia (abordare moderna specifica OnePageApplication)(focus pe web app)
+-Focus pe quality of life din punct de vedere a End-Userului (care sunt studenti)
+-Mock-ups pentru elementele din pagina/ limitari
+
+@Back End
+-Arhiva Nodejs+Express de vazut pe drive(exemplu) 
+-Mai multe tehnologii 
+-Stabilire Protocol Comunicare Back-End = Front-End
+-Pregatirea unui sistem de comunicare a erorilor+validarilor Back-End = Front-End
+-Stabilirea Modelului de date folosit pe server (baza de date etc..)
+
+@QA
+-Arhiva Nodejs+Express de vazut pe drive(exemplu)
+-scenarii de utilizare + testare
+-solutii tehnice pt testare manuala si automata (propuneri prof:Junit, Selenium) (document pe drive)
+
+
+@Everyone
+-excel activitati individuale pentru fiecare departament indiferent de dep persoanei (document pe drive)
+-mutate propunerile de tehnologii din "propunere tehnologii" => document tehnologii in cadrul departamentului(document pe drive)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+******************************************
+Coding Goals(in ordinea importantei)
+******************************************
+1.Creare de diagrame pentru use cases/testare/baza de date/prototip al paginii web(include si design)
+2.Stabilirea mediului de lucru in cadrul fiecarui departament (tehnologii + un program tip hello world de test pentru functionalitati)
+3.Crearea unui prototip initial de baza de date (+ date false de pe site-ul mokup sau alta sura de generare)
+4.Crearea unui prototip al paginii web initial
+5.Crearea controler-ului si view-ului principal (cel putin un prototip)
+
+De mentionat ca toate aceste activitati trebuie verificate pentru sincronizare si nu trebuie facute in graba tocmai din acest motiv.
+Nu este obligatoriu sa aveti totul facut, estimativ ar trebui sa depasiti primii 3 pasi; insa puteti sa va aratati dedicatia si sa ii faceti pe toti.
+Mult spor!
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+DEADLINE: LUNI(30/03) SEARA 11:59PM
+SEDINTA LIDERI: DUMINICA(29/03): SEARA LA 18 PM 
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
