@@ -1,1 +1,1 @@
-Am rulat comanda: insert into fiimentordb.private_message(Id, SenderId, ReceiverId, Content, Time) values(102,901,1,'','2019-04-15 21:10:10') in MySQL Workbench pe Windows 10, care nu a rezultat in eroare, cu toate ca mesajul nu are niciun continut.
+Am rulat comanda: insert into fiimentordb.private_message(Id, SenderId, ReceiverId, Content, Time) values(102,901,1,'','2019-04-15 21:10:10') in MySQL Workbench pe Windows 10, care nu a rezultat in eroare, cu toate ca mesajul nu are niciun continut, adica testul a esuat.
