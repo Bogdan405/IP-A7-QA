@@ -1,0 +1,1 @@
+Am rulat comanda: insert into fiimentordb.comment_notification(Id, UserId, PostCommentId, Seen) values(931,NULL,30,1) in MySQL Workbench pe Windows 10. Testul a dat eroare, fiindca UserId nu are nicio valoare.
