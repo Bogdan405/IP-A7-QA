@@ -1,1 +1,2 @@
 Am rulat comanda: insert into fiimentordb.private_message(Id, SenderId, ReceiverId, Content, Timestamp) values(101,901,1,'Bună ziua!','2019-04-15 11:10:10') in MySQL Workbench, la care a aparut eroarea: Incorrect string value: '\xC4\x83 ziu...' for column 'Content', din cauza folosirii caracterului romanesc 'ă' in continutul mesajului.
+Testul a esuat.
