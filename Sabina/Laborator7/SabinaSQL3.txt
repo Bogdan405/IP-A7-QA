@@ -1,0 +1,1 @@
+Am rulat comanda: insert into fiimentordb.private_message_notification(Id, UserId, SenderId, Seen) values(3,NULL,1,0) in MySQL Workbench pe Windows 10. Testul a dat eroare fiindca a fost notificat un utilizator inexistent.

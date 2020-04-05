@@ -1,0 +1,1 @@
+insert into fiimentordb.comment_notification(Id, UserId, PostCommentId, Seen) values(931,NULL,30,1);
