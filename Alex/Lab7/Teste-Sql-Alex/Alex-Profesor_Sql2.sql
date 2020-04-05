@@ -1,0 +1,1 @@
+insert into professor (Id, UserId, AcademicRank) values (91, 991, '我有两只狗');

@@ -1,0 +1,3 @@
+S-a incercat inserarea unui profesor nou care are acelasi id ca un profesor gresit iar inserarea
+a avut succes.
+Trebuie setat ca id-ul profesorului sa fie unic.

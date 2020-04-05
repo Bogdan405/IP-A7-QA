@@ -1,0 +1,8 @@
+Am incercat in multe moduri sa inserez sau sa modific informatii din tabela student.
+S-a incercat inserarea unui nou student pe un loc nepopulat - Eroare
+S-a incercat Inserarea unui student deja existent - Eroare
+S-a incercat stergerea si adaugarea unui nou membru in pozitia fostului - Eroare
+
+
+CONCLUZIE : Testul pe baza de date studenti nu este satisfacator.
+Trebuie revenit in viitor.

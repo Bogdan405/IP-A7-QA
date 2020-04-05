@@ -1,0 +1,2 @@
+S-a incercat inserarea pe o pozitie libera a unui admin cu UserId de 4 cifre.
+Aplicatia a returnat eroare - Testul a avut succes.

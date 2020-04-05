@@ -1,0 +1,2 @@
+S-a incercat inserarea unui admin pe o pozitie(id) deja ocupata.
+Testul a returnat eroare - A avut succes.

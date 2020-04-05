@@ -1,0 +1,3 @@
+Un user poate fi inserat in baza de date desi are acelasi ID, Username, Password, FirstName,LastName, Role si Email.
+Testul a fost efectuat prin inserarea unui user deja prezent.
+Numai serial number ul a fost schimbat.

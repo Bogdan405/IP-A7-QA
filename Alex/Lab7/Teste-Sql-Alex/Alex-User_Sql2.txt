@@ -1,0 +1,3 @@
+Un user poate fi introdus in baza de date desi sunt spatii in mijlocul username-ului. ("kgabbi   tis0")
+Testul a fost efectual prin inserarea unui user care avea la username spatii in mijlocul textului.
+Acesta a fost memorat cu spatiile precizate.

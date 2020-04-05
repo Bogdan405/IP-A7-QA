@@ -1,0 +1,3 @@
+S-a incercat inserarea unui user in baza de date, user-ul avand ca nume caractere straine.
+Testul a returnat o eroare - a fost un succes.
+Aplicatia functioneaza in regula din acest punct de vedere.

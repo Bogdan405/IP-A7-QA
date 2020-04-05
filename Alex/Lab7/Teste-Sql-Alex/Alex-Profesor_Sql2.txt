@@ -1,0 +1,2 @@
+S-a incercat introducerea caracterelor straine in coloana 'Academic rank'.(我有两只狗)
+Testul a returnat eroare - A fost un succes 

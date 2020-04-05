@@ -1,0 +1,1 @@
+insert into student (Id, UserId, Groupe, Year, TutorId) values (900, 900, 'E2', 3, 907);
