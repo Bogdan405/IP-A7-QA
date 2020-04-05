@@ -1,0 +1,2 @@
+S-a incercat introducerea in baza de date a unui comentariu fara continut.
+Nu a fost raportata nicio eroare. - trebuie remediat

@@ -1,0 +1,2 @@
+S-a incercat introducerea in baza de date a unui comentariu care contine caractere speciale(care nu apartin alfabetului englez).
+De fiecare data a fost raportata eroare. - testul a avut succes

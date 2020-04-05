@@ -1,0 +1,2 @@
+A fost eliminata o postare care detinea notificari
+In urma eliminarii si notificarile au fost eliminate. - testul a fost reusit

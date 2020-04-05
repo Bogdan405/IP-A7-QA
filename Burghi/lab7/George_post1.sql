@@ -1,0 +1,1 @@
+insert into post (Id, UserId, GroupeId, Title, Content) VALUES (33, 931, 30, '', '');
