@@ -1,0 +1,3 @@
+Test Succes: 
+s-a incercat inserarea unui entry cu valori caractere alfanumerice in camp cu int -- 
+ --SQL Error (1136): Column count doesn't match value count at row 1

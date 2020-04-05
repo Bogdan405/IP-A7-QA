@@ -1,0 +1,2 @@
+Test Succes : s-a incercat inserarea unui nou entry cu un Id deja existent, ceea ce nu ar trebuie sa fie posibil,
+s-a returnat eroare

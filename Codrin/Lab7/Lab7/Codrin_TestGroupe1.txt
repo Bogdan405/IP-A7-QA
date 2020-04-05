@@ -1,0 +1,2 @@
+Test Succes:
+Nu s-a putut insera entry duplicat, constraint-ul de Primary a fost adaugat

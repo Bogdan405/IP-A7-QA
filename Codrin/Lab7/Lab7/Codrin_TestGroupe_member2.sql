@@ -1,0 +1,1 @@
+insert into Groupe_member values (1, 1, 1);

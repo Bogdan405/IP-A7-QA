@@ -1,0 +1,1 @@
+insert into Groupe_member values ('abc','a','abc');

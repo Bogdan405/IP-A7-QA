@@ -1,0 +1,2 @@
+Test Succes:
+S-a incercat inserare de valoare negativa : nu functionat, atributul unsigned a fost setat

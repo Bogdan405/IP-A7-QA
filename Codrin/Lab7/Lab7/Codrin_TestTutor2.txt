@@ -1,0 +1,3 @@
+Test Succes: 
+s-a incercat inserarea unui entry cu valori mult mai mari decat maximul admis in coloane (10); s-a returnat eroare
+Out of Range 
