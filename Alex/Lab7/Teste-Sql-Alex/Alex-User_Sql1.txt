@@ -1,3 +1,5 @@
 Un user poate fi inserat in baza de date desi are acelasi ID, Username, Password, FirstName,LastName, Role si Email.
+A functionat.
 Testul a fost efectuat prin inserarea unui user deja prezent.
 Numai serial number ul a fost schimbat.
+Trebuie ca userii sa fie unici.
