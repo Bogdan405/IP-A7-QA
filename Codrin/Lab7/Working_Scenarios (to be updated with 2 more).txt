@@ -1,0 +1,51 @@
+Studentul caută să își aleagă un profesor de licență
+
+Studentul își caută un profesor de licență, și, în mod normal, după ce studentul are un profesor de licență,
+nu va mai putea să își aleagă încă unul.
+
+Proces de testare:
+	1. Studentul aceesează operațiunea pentru asocierea profesorului dorit.
+	1'.(se simulează acest acces pentru consistența la testări repetate)
+	
+	2. Se așteaptă un răspuns returnat:
+		A. Succes, dacă totul a decurs conform așteptărilor.
+		B. Eșec!
+	
+3. În funcție de răspunsul returnat, aplicația poate să se comporte în diverse moduri, decizii luate la nivel
+de back-end;
+
+Probleme posibile:
+	Mai exact, pentru punctul 2.B - Răspunusul care se așteaptă este sub forma unui vector de variabile boolene care să
+ateste succesul deobicei, sau FAILURE în cazurile:
+	-- în care cererea de asociere a profesorului coordonator nu a fost acceptată (vorbim de cazul în care în mod normal, s-ar fi acceptat);
+	-- scrierea în baza de date a eșuat sau a fost eronat efectuată;
+	-- interogările bazei de date conțin greșeli de sintaxă;
+	-- în ORICE MOMENT,pot să apară probleme la conexiuni sau chiar pierderi de curent electric, care pot corupe datele;
+	-- failure la nivelul serverului;
+
+Profesorul acceptă cererea de a coordona licența unui student (asemănător celuilalt test)
+
+Profesorul primește aceste cereri, le analizează și le acceptă, după caz. El poate accepta cereri în limita
+pe care și-a setat-o el însuși (plus probabil, un maxim existent ca default în aplicație, de exemplu 30)
+
+Proces de testare:
+	1. Profesorul accesează operațiunea pentru a accepta cererea unui student;
+	1'.(se simulează acest acces pentru consistența la testări repetate)
+	2. Se așteaptă un răspuns returnat care va fi testat:
+		A. Succes
+		B. Eșec
+	3. În funcție de răspunsul returnat, aplicația poate să se comporte în diverse moduri, decizii luate la nivel
+de back-end;
+
+Probleme posibile: 
+	-- scrierea în baza de date a eșuat;
+	-- interogările bazei de date conțin greșeli de sintaxă;
+	-- în ORICE MOMENT,pot să apară probleme la conexiuni sau chiar pierderi de curent electric, care pot corupe datele;
+	-- failure la nivelul serverului;
+	
+	-- constrângerea de limită nu a fost aplicată
+	-- constrângerea de limită a fost aplicată prematur, când limita nu a fost atinsă încă;
+
+
+
+ 
