@@ -1,0 +1,224 @@
+
+Category : AlexFullSQL.txt
+########################################################################
+
+ -Alex-Admin_Sql1.txt
+<---------------------------------------------------------------------->
+S-a incercat inserarea unui nou admin care are acelasi UserId ca un admin prezent.
+A functionat.
+Trebuie facut ca aplicatia sa aiba UserId unic.
+
+
+ -Alex-Admin_Sql2.txt
+<---------------------------------------------------------------------->
+S-a incercat inserarea unui admin pe o pozitie(id) deja ocupata.
+Testul a returnat eroare - A avut succes.
+
+
+ -Alex-Admin_Sql3.txt
+<---------------------------------------------------------------------->
+S-a incercat inserarea pe o pozitie libera a unui admin cu UserId de 4 cifre.
+Aplicatia a returnat eroare - Testul a avut succes.
+
+
+ -Alex-Profesor_Sql1.txt
+<---------------------------------------------------------------------->
+S-a incercat introducerea unui profesor deja prezent.
+Testul a returnat eroare - A avut succes
+
+
+
+ -Alex-Profesor_Sql2.txt
+<---------------------------------------------------------------------->
+S-a incercat introducerea caracterelor straine in coloana 'Academic rank'.(我有两只狗)
+Testul a returnat eroare - A fost un succes 
+
+
+ -Alex-Profesor_Sql3.txt
+<---------------------------------------------------------------------->
+S-a incercat inserarea unui profesor nou care are acelasi id ca un profesor prezent iar inserarea
+a avut succes.
+Trebuie setat ca id-ul profesorului sa fie unic.
+
+
+ -Alex-Student_Sql1-2-3.txt
+<---------------------------------------------------------------------->
+Am incercat in multe moduri sa inserez sau sa modific informatii din tabela student.
+S-a incercat inserarea unui nou student pe un loc nepopulat - Eroare
+S-a incercat Inserarea unui student deja existent - Eroare
+S-a incercat stergerea si adaugarea unui nou membru in pozitia fostului - Eroare
+
+
+CONCLUZIE : Testul pe baza de date studenti nu este satisfacator.
+Trebuie revenit in viitor.
+
+
+ -Alex-User_Sql1.txt
+<---------------------------------------------------------------------->
+Un user poate fi inserat in baza de date desi are acelasi ID, Username, Password, FirstName,LastName, Role si Email.
+Testul a fost efectuat prin inserarea unui user deja prezent.
+Numai serial number ul a fost schimbat.
+
+
+ -Alex-User_Sql2.txt
+<---------------------------------------------------------------------->
+Un user poate fi introdus in baza de date desi sunt spatii in mijlocul username-ului. ("kgabbi   tis0")
+Testul a fost efectual prin inserarea unui user care avea la username spatii in mijlocul textului.
+Acesta a fost memorat cu spatiile precizate.
+
+
+
+ -Alex-User_Sql3.txt
+<---------------------------------------------------------------------->
+S-a incercat inserarea unui user in baza de date, user-ul avand ca nume caractere straine.
+Testul a returnat o eroare - a fost un succes.
+Aplicatia functioneaza in regula din acest punct de vedere.
+
+
+
+
+Category : CodrinFullSQL.txt
+########################################################################
+
+ -Codrin_TestGroupe_member1.txt
+<---------------------------------------------------------------------->
+Test Succes: 
+s-a incercat inserarea unui entry cu valori caractere alfanumerice in camp cu int + eroare Foreign Key constraint was
+previosly added
+
+
+ -Codrin_TestGroupe_member2.txt
+<---------------------------------------------------------------------->
+Test Succes :
+ s-a incercat inserarea unui nou entry cu un Id deja existent, ceea ce nu ar trebuie sa fie posibil,
+s-a returnat eroare -- id unic Primary key -- s-a returnat eroare
+
+
+ -Codrin_TestGroupe_member3.txt
+<---------------------------------------------------------------------->
+Test esuat:
+S-a reusit inserarea unui membru la doua grupe
+
+
+ -Codrin_TestGroupe1.txt
+<---------------------------------------------------------------------->
+Test Succes:
+Nu s-a putut insera entry duplicat, constraint-ul de Primary a fost adaugat
+
+
+ -Codrin_TestGroupe2.txt
+<---------------------------------------------------------------------->
+Test Succes:
+out of range warning -- Numar inserat prea mare pentru valoarea admisa la campurile 2,3
+
+
+ -Codrin_TestGroupe3.txt
+<---------------------------------------------------------------------->
+Test Succes:
+S-a incercat inserare de valoare negativa : nu functionat, atributul unsigned a fost setat
+
+
+ -Codrin_TestTutor1.txt
+<---------------------------------------------------------------------->
+Test Succes: 
+s-a incercat inserarea unui entry cu valori caractere alfanumerice in camp cu int -- 
+ --SQL Error (1136): Column count doesn't match value count at row 1
+
+
+ -Codrin_TestTutor2.txt
+<---------------------------------------------------------------------->
+Test Succes: 
+s-a incercat inserarea unui entry cu valori mult mai mari decat maximul admis in coloane (10); s-a returnat eroare
+Out of Range 
+
+
+ -Codrin_TestTutor3.txt
+<---------------------------------------------------------------------->
+Test Succes : s-a incercat inserarea unui nou entry cu un Id deja existent, ceea ce nu ar trebuie sa fie posibil,
+s-a returnat eroare
+
+
+
+
+Category : GeorgeFullSQL.txt
+########################################################################
+
+ -George_post_comment1.txt
+<---------------------------------------------------------------------->
+S-a incercat introducerea in baza de date a unui comentariu fara continut.
+Nu a fost raportata nicio eroare. - trebuie remediat
+
+
+ -George_post_comment2.txt
+<---------------------------------------------------------------------->
+S-a incercat introducerea in baza de date a unui comentariu care contine caractere speciale(care nu apartin alfabetului englez).
+De fiecare data a fost raportata eroare. - testul a avut succes
+
+
+ -George_post_comment3.txt
+<---------------------------------------------------------------------->
+A fost eliminata o postare care detinea comentarii.
+In urma eliminarii si comentariile au fost eliminate. - testul a avut succes
+
+
+ -George_post_notification1.txt
+<---------------------------------------------------------------------->
+A fost eliminata o postare care detinea notificari
+In urma eliminarii si notificarile au fost eliminate. - testul a avut succes
+
+
+ -George_post1.txt
+<---------------------------------------------------------------------->
+S-a incercat introducerea in baza de date a unei postari fara titlu si/sau continut.
+Nu a fost raportata nicio eroare. - trebuie remediat
+
+
+ -George_post2.txt
+<---------------------------------------------------------------------->
+S-a incercat introducerea in baza de date a unei postari care contine caractere speciale(care nu apartin alfabetului englez).
+De fiecare data a fost raportata eroare. - testul a avut succes
+
+
+
+
+Category : SabinaFullSQL.txt
+########################################################################
+
+ -SabinaSQL1.txt
+<---------------------------------------------------------------------->
+Am rulat comanda: insert into fiimentordb.private_message(Id, SenderId, ReceiverId, Content, Timestamp) values(101,901,1,'Bună ziua!','2019-04-15 11:10:10') in MySQL Workbench, la care a aparut eroarea: Incorrect string value: '\xC4\x83 ziu...' for column 'Content', din cauza folosirii caracterului romanesc 'ă' in continutul mesajului.
+Testul a esuat.
+
+
+
+ -SabinaSQL2.txt
+<---------------------------------------------------------------------->
+Am rulat comanda: insert into fiimentordb.private_message(Id, SenderId, ReceiverId, Content, Time) values(102,901,1,'','2019-04-15 21:10:10') in MySQL Workbench pe Windows 10, care nu a rezultat in eroare, cu toate ca mesajul nu are niciun continut, 
+adica testul a esuat.
+
+
+ -SabinaSQL3.txt
+<---------------------------------------------------------------------->
+Am rulat comanda: insert into fiimentordb.private_message_notification(Id, UserId, SenderId, Seen) values(3,NULL,1,0) in MySQL Workbench pe Windows 10. 
+Testul a avut succes, deoarece a rezultat in eroare cand a fost introdus NULL in UserId.
+
+
+ -SabinaSQL4.txt
+<---------------------------------------------------------------------->
+Am rulat comanda: insert into fiimentordb.private_message_notification(Id, UserId, SenderId, Seen) values(3,901,NULL,0) in MySQL Workbench pe Windows 10. 
+Testul a reusit deoarece a rezultat in eroare cand a fost introdus NULL in SenderId.
+
+
+ -SabinaSQL5.txt
+<---------------------------------------------------------------------->
+Am rulat comanda: insert into fiimentordb.comment_notification(Id, UserId, PostCommentId, Seen) values(931,NULL,30,1) in MySQL Workbench pe Windows 10. 
+Testul a reusit deoarece a rezultat eroare cand a fost introdus NULL in UserId.
+
+
+ -SabinaSQL6.txt
+<---------------------------------------------------------------------->
+Am rulat comanda: insert into fiimentordb.comment_notification(Id, UserId, PostCommentId, Seen) values(931,45,NULL,1) in MySQL Workbench pe Windows 10. 
+Testul a avut succes, deoarece la introducerea valorii NULL in PostCommentId rezultatul a fost eroare.
+
+
+

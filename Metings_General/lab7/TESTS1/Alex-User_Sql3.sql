@@ -1,0 +1,1 @@
+insert into user (Id, Username, SerialNumber, Password, FirstName, LastName, Role, Email) values (1000, '我有大鸡巴', '506118930RSL641263', 'B3GLXA', 'Karole', 'Gabbitis', 'student', 'kgabbitis0@sohu.com');

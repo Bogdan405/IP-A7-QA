@@ -1,0 +1,1 @@
+insert into Tutor values (23, 'Mihai Eminescu', '31')

@@ -1,0 +1,1 @@
+insert into admin (Id, UserId) values (11, 991);

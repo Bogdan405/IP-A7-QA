@@ -1,0 +1,1 @@
+insert into professor (Id, UserId, AcademicRank) values (91, 990, 'Assistant Professor');

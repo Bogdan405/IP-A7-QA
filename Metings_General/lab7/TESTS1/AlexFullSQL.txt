@@ -1,0 +1,73 @@
+
+ -Alex-Admin_Sql1.txt
+<---------------------------------------------------------------------->
+S-a incercat inserarea unui nou admin care are acelasi UserId ca un admin prezent.
+A functionat.
+Trebuie facut ca aplicatia sa aiba UserId unic.
+
+
+ -Alex-Admin_Sql2.txt
+<---------------------------------------------------------------------->
+S-a incercat inserarea unui admin pe o pozitie(id) deja ocupata.
+Testul a returnat eroare - A avut succes.
+
+
+ -Alex-Admin_Sql3.txt
+<---------------------------------------------------------------------->
+S-a incercat inserarea pe o pozitie libera a unui admin cu UserId de 4 cifre.
+Aplicatia a returnat eroare - Testul a avut succes.
+
+
+ -Alex-Profesor_Sql1.txt
+<---------------------------------------------------------------------->
+S-a incercat introducerea unui profesor deja prezent.
+Testul a returnat eroare - A avut succes
+
+
+
+ -Alex-Profesor_Sql2.txt
+<---------------------------------------------------------------------->
+S-a incercat introducerea caracterelor straine in coloana 'Academic rank'.(我有两只狗)
+Testul a returnat eroare - A fost un succes 
+
+
+ -Alex-Profesor_Sql3.txt
+<---------------------------------------------------------------------->
+S-a incercat inserarea unui profesor nou care are acelasi id ca un profesor prezent iar inserarea
+a avut succes.
+Trebuie setat ca id-ul profesorului sa fie unic.
+
+
+ -Alex-Student_Sql1-2-3.txt
+<---------------------------------------------------------------------->
+Am incercat in multe moduri sa inserez sau sa modific informatii din tabela student.
+S-a incercat inserarea unui nou student pe un loc nepopulat - Eroare
+S-a incercat Inserarea unui student deja existent - Eroare
+S-a incercat stergerea si adaugarea unui nou membru in pozitia fostului - Eroare
+
+
+CONCLUZIE : Testul pe baza de date studenti nu este satisfacator.
+Trebuie revenit in viitor.
+
+
+ -Alex-User_Sql1.txt
+<---------------------------------------------------------------------->
+Un user poate fi inserat in baza de date desi are acelasi ID, Username, Password, FirstName,LastName, Role si Email.
+Testul a fost efectuat prin inserarea unui user deja prezent.
+Numai serial number ul a fost schimbat.
+
+
+ -Alex-User_Sql2.txt
+<---------------------------------------------------------------------->
+Un user poate fi introdus in baza de date desi sunt spatii in mijlocul username-ului. ("kgabbi   tis0")
+Testul a fost efectual prin inserarea unui user care avea la username spatii in mijlocul textului.
+Acesta a fost memorat cu spatiile precizate.
+
+
+
+ -Alex-User_Sql3.txt
+<---------------------------------------------------------------------->
+S-a incercat inserarea unui user in baza de date, user-ul avand ca nume caractere straine.
+Testul a returnat o eroare - a fost un succes.
+Aplicatia functioneaza in regula din acest punct de vedere.
+

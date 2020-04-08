@@ -1,0 +1,8 @@
+Codrin_TestGroupe_member3.txt
+----------------------------------
+Test esuat:
+
+S-a incercat inserarea unui student la doua grupe diferite.
+A functionat.
+Trebuie facut ca ficare student sa aiba Groupe unic.
+

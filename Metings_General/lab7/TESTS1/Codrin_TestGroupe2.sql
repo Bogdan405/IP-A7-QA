@@ -1,0 +1,1 @@
+insert into Groupe values (1, 123123123122, 12311231)

@@ -1,0 +1,58 @@
+
+ -Codrin_TestGroupe_member1.txt
+<---------------------------------------------------------------------->
+Test Succes: 
+s-a incercat inserarea unui entry cu valori caractere alfanumerice in camp cu int + eroare Foreign Key constraint was
+previosly added
+
+
+ -Codrin_TestGroupe_member2.txt
+<---------------------------------------------------------------------->
+Test Succes :
+ s-a incercat inserarea unui nou entry cu un Id deja existent, ceea ce nu ar trebuie sa fie posibil,
+s-a returnat eroare -- id unic Primary key -- s-a returnat eroare
+
+
+ -Codrin_TestGroupe_member3.txt
+<---------------------------------------------------------------------->
+Test esuat:
+S-a reusit inserarea unui membru la doua grupe
+
+
+ -Codrin_TestGroupe1.txt
+<---------------------------------------------------------------------->
+Test Succes:
+Nu s-a putut insera entry duplicat, constraint-ul de Primary a fost adaugat
+
+
+ -Codrin_TestGroupe2.txt
+<---------------------------------------------------------------------->
+Test Succes:
+out of range warning -- Numar inserat prea mare pentru valoarea admisa la campurile 2,3
+
+
+ -Codrin_TestGroupe3.txt
+<---------------------------------------------------------------------->
+Test Succes:
+S-a incercat inserare de valoare negativa : nu functionat, atributul unsigned a fost setat
+
+
+ -Codrin_TestTutor1.txt
+<---------------------------------------------------------------------->
+Test Succes: 
+s-a incercat inserarea unui entry cu valori caractere alfanumerice in camp cu int -- 
+ --SQL Error (1136): Column count doesn't match value count at row 1
+
+
+ -Codrin_TestTutor2.txt
+<---------------------------------------------------------------------->
+Test Succes: 
+s-a incercat inserarea unui entry cu valori mult mai mari decat maximul admis in coloane (10); s-a returnat eroare
+Out of Range 
+
+
+ -Codrin_TestTutor3.txt
+<---------------------------------------------------------------------->
+Test Succes : s-a incercat inserarea unui nou entry cu un Id deja existent, ceea ce nu ar trebuie sa fie posibil,
+s-a returnat eroare
+

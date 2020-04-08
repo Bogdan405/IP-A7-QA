@@ -1,0 +1,56 @@
+Testele pot fi gasite dupa nume, ca fisier sql, in drive qa lab7 teste. 
+
+########################################################################
+SabinaSQL1.txt
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+Am incercat inserarea unui caracter romanesc, la care a aparut eroare, deci testul a esuat.
+
+
+
+
+
+########################################################################
+
+Alex-Admin_Sql1.txt
+----------------------------------
+S-a incercat inserarea unui nou admin care are acelasi UserId ca un admin prezent.
+A functionat.
+Trebuie facut ca aplicatia sa aiba UserId unic.
+
+
+Alex-Profesor_Sql3.txt
+----------------------------------
+S-a incercat inserarea unui profesor nou care are acelasi id ca un profesor prezent iar inserarea
+a avut succes.
+Trebuie setat ca id-ul profesorului sa fie unic.
+
+Alex-User_Sql1.txt
+----------------------------------
+Un user poate fi inserat in baza de date desi are acelasi ID, Username, Password, FirstName,LastName, Role si Email.
+A functionat.
+Testul a fost efectuat prin inserarea unui user deja prezent.
+Numai serial number ul a fost schimbat.
+
+
+Alex-User_Sql2.txt
+----------------------------------
+Un user poate fi introdus in baza de date desi sunt spatii in mijlocul username-ului. ("kgabbi   tis0")
+Testul a fost efectual prin inserarea unui user care avea la username spatii in mijlocul textului.
+Acesta a fost memorat cu spatiile precizate.
+
+
+
+
+
+
+########################################################################
+Codrin_TestGroupe_member3.txt
+----------------------------------
+Test esuat:
+
+S-a incercat inserarea unui student la doua grupe diferite.
+A functionat.
+Trebuie facut ca ficare student sa aiba Groupe unic.
+
+
+

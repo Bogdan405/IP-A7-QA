@@ -1,0 +1,1 @@
+insert into Tutor values ('abc','abc');
