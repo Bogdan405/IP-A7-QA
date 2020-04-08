@@ -1,4 +1,4 @@
-Studentul caută să își aleagă un profesor de licență
+Scenariu 1: Studentul caută să își aleagă un profesor de licență
 
 Studentul își caută un profesor de licență, și, în mod normal, după ce studentul are un profesor de licență,
 nu va mai putea să își aleagă încă unul.
@@ -17,16 +17,20 @@ de back-end;
 Probleme posibile:
 	Mai exact, pentru punctul 2.B - Răspunusul care se așteaptă este sub forma unui vector de variabile boolene care să
 ateste succesul deobicei, sau FAILURE în cazurile:
-	-- în care cererea de asociere a profesorului coordonator nu a fost acceptată (vorbim de cazul în care în mod normal, s-ar fi acceptat);
-	-- scrierea în baza de date a eșuat sau a fost eronat efectuată;
+	
+	-- scrierea în baza de date a eșuat;
 	-- interogările bazei de date conțin greșeli de sintaxă;
-	-- în ORICE MOMENT,pot să apară probleme la conexiuni sau chiar pierderi de curent electric, care pot corupe datele;
+	-- în ORICE MOMENT, pot să apară probleme la conexiuni sau chiar pierderi de curent electric, care pot corupe datele;
 	-- failure la nivelul serverului;
+	
+	-- studentul avea deja asociat un profesor anterior, accidental din alte inserări în baza de date (propun existența unei metode
+ce verifică acest lucru înainte de trimiterea cererii);
 
-Profesorul acceptă cererea de a coordona licența unui student (asemănător celuilalt test)
+
+Scenariu 2: Profesorul acceptă cererea de a coordona licența unui student (asemănător testului anterior)
 
 Profesorul primește aceste cereri, le analizează și le acceptă, după caz. El poate accepta cereri în limita
-pe care și-a setat-o el însuși (plus probabil, un maxim existent ca default în aplicație, de exemplu 30)
+pe care și-a setat-o el însuși (plus probabil, un maxim existent ca default în aplicație, de exemplu: 30)
 
 Proces de testare:
 	1. Profesorul accesează operațiunea pentru a accepta cererea unui student;
@@ -40,11 +44,50 @@ de back-end;
 Probleme posibile: 
 	-- scrierea în baza de date a eșuat;
 	-- interogările bazei de date conțin greșeli de sintaxă;
-	-- în ORICE MOMENT,pot să apară probleme la conexiuni sau chiar pierderi de curent electric, care pot corupe datele;
+	-- în ORICE MOMENT, pot să apară probleme la conexiuni sau chiar pierderi de curent electric, care pot corupe datele;
 	-- failure la nivelul serverului;
 	
 	-- constrângerea de limită nu a fost aplicată
 	-- constrângerea de limită a fost aplicată prematur, când limita nu a fost atinsă încă;
+
+Scenariu 3: Utilizator existent (Student etc) se autentifică folosind User și Parola, introduse CORECT
+
+Datele sunt trimise din formular în back-end la baza de date pentru verificarea lor. În mod normal, dacă datele existente acestui
+cont există, autentificarea are loc cu succes și utilizatorul continuă sa navigheze prin aplicație și să o utilizeze.
+
+Proces de testare:
+	1. Datele trimise prin formularul de logare sunt verificate - pentru greșeli cuprinse în testele descrise în lab6 etc.
+		A. Succes
+		B. Failure - invalid user/password
+	2. Datele validate pornesc interogări în baza de date și sunt confruntate cu cele existente pentru acel cont.
+	3. Se returnează succes, se acorda accesul la aplicație.
+
+Probleme posibile:
+	-- interogările (select, cursori, blocuri anonime etc.) de la pasul 2. nu sunt corect efectuate
+- greșeli de sintaxa, fail to read file;
+	-- aceleași probleme legate de conexiuni, timeout, pierderi/coruperi de date, căderi de curent
+ electric, servere de calitate slabă etc. pot interveni;
+	-- datele în baza de date au fost suprascrise de alt cont;
+	-- utilizatorul nu a confirmat crearea contului, prin e-mail - în cazul în care e implementată funcționalitatea
+
+Scenariu 4: Utilizator-ul se deloghează de pe aplicație
+
+Se accesează funcția de logout - accesul la aplicație se încheie și se revine la pagina de login/pagina principală.
+
+Proces de testare:
+	1. Se trimite o cerere către backend pentru încetarea conexiuni;
+	2. Cererea e acceptată, și se încheie scrierea și citirea datelor în BD;
+	3. Utilizatorul se întoarce la pagina de login/main page;
+
+Probleme posibile:
+	-- cererea de întrerupere se face în timpul unei scrieri/citiri în baza de date și se pot corupe date
+--->ar trebui verificat sau ținut un log al schimbărilor;
+	-- după delogare, utilizatorul rămâne pe pagina de pe care s-au delogat, în loc să fie trimis la login sau main page;
+	-- interogarile (select, cursori, blocuri anonime etc.) de la pasul 2. nu sunt corect efectuate
+- greseli de sintaxa, fail to read file;
+	-- aceleasi probleme legate de conexiuni, timeout, pierderi/coruperi de date, caderi de curent
+ electric, servere de calitate slaba etc. pot interveni;
+
 
 
 
