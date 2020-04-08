@@ -1,0 +1,4 @@
+SabinaSQL1.txt
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+Am incercat inserarea unui caracter romanesc, la care a aparut eroare, deci testul a esuat.
+
