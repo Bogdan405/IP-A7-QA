@@ -1,0 +1,19 @@
+Data efectuare test:
+Identificator test:
+Realizat de:
+Aplicatii folosite:
+Sistem de operare:
+Procesor:
+Memorie RAM (nr. de GB): 
+Nume fisier cod executat la testare: 
+Locatia Fisier cod Executat:
+
+
+Status test: esuat/trecut
+Observatii rezultat (erori, afisare, comportament):
+
+
+
+Alte observatii (viteza. Usurinta de utilizare):
+
+Metodologia folosita pentru ruare (descrierea metodei de executie a testului):
