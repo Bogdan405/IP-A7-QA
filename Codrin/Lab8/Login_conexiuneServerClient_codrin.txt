@@ -1,0 +1,29 @@
+--- Data efectuare test: 15/04
+--- Identificator test: 023_codrin (to be updated)
+--- Realizat de: Codrin Donciu	
+--- Aplicații folosite: Google Chrome, Opera, Visual Studio
+--- Sistem de operare: Windows 10 Home 64-bits
+--- Procesor: Intel(R) Core(TM) i3-5005U CPU @ 2.00GHz 2.00Ghz
+--- Memorie RAM (nr. de GB): 4.00 GB
+--- Nume fișier cod executat la testare: - (neaplicabil)
+--- Locația fișier cod executat:  - (neaplicabil)
+
+
+--- Status test: TRECUT
+
+--- Observații rezultat (erori, afisare, comportament):
+
+**Mesajul de acces la login este trimis către server, iar în consola din VS Cod
+e se observă răspunsul dat. Totodată, din inspectorul
+browserului se observă că se accesează pagina următoare pentru 
+afișarea login-ului, doar că nu este implementată încă.
+
+
+Alte observații:
+**Pentru login obișnuit viteza la răspunsul din consolă la server a fost în medie aprox. 1.1 s
+**Pentru încercări de login cu date incorecte, viteza de răspuns a serverului a fost în medie aprox. 1.85 s
+
+Metodologia folosita pentru rulare (descrierea metodei de execuție a testului):
+
+Se monitorizează consola pentru client și pentru server și inspectorul browser-ului pe care se testează. Se urmărește ca
+mesajele să fie transmise corespunzător din front-end în back-end.
