@@ -1,17 +1,17 @@
-Data efectuare test: 15/04
-Identificator test: 023_codrin (to be updated)
-Realizat de: Codrin Donciu	
-Aplicații folosite: Google Chrome, Opera
-Sistem de operare: Windows 10 Home 64-bits
-Procesor: Intel(R) Core(TM) i3-5005U CPU @ 2.00GHz 2.00Ghz
-Memorie RAM (nr. de GB): 4.00 GB
-Nume fișier cod executat la testare: - (neaplicabil)
-Locația fișier cod executat:  - (neaplicabil)
+---Data efectuare test: 15/04
+---Identificator test: 023_codrin (to be updated)
+---Realizat de: Codrin Donciu	
+---Aplicații folosite: Google Chrome, Opera
+---Sistem de operare: Windows 10 Home 64-bits
+---Procesor: Intel(R) Core(TM) i3-5005U CPU @ 2.00GHz 2.00Ghz
+---Memorie RAM (nr. de GB): 4.00 GB
+---Nume fișier cod executat la testare: - (neaplicabil)
+---Locația fișier cod executat:  - (neaplicabil)
 
 
-Status test: TRECUT
+---Status test: TRECUT
 
-Observații rezultat (erori, afisare, comportament):
+---Observații rezultat (erori, afisare, comportament):
 
 Google Chrome 
 ** testat 800 x 600 - nefuncțional
@@ -53,7 +53,7 @@ e în regulă
 central sub formularul de login
 
 
-Metodologia folosita pentru rulare (descrierea metodei de execuție a testului):
+---Metodologia folosita pentru rulare (descrierea metodei de execuție a testului):
 
 **Se rulează serverul și clientul din Visual Code -- adresa localhost:3000 -- în browser-ul
 pe care se testează și se apreciază aspectul aplicației/paginii, începând la rezoluția minimă
