@@ -1,0 +1,12 @@
+Trebuie să aveți aplicația GitHub pentru desktop și să aveți acces la repo-ul IP-A7 a lui Mișa. Dați clone la repo și fetch.
+1. Instalați Visual Code (https://code.visualstudio.com/);
+2. Instalați MariaDB (țineți minte user/pass de aici) - versiunea 10.14.12-GA pentru Windows (https://mariadb.com/downloads/#mariadb_platform)
+3. Instalați NoteJS - (https://nodesource.com/blog/installing-nodejs-tutorial-windows/)
+5. Deschideți windows PowerShell ca administrator și instalați yarn (https://classic.yarnpkg.com/en/docs/install#windows-stable)
+4. Mergeti unde aveti folderul pentru proiectele GitHub, în folder-ul proiectului IP-A7, dați click dreapte pe /FinalProject
+și deschideți cu Visual Code; în explorer click dreapta pe folderul „Server” și apăsați open terminal; 
+În terminal scrieți comanda mpm (instalează dependențele)
+5. În fișierul ormconfig.json din server va trebui să scrieți user/password pe care le-ați setat voi la instalarea MariaDB (user va fi root mereu cred)
+6. Scrieți în terminal npm start, va porni serverul si ar trebui să scrie „listening at port 8000” sau ceva de genul
+7. La folderul „Client” la fel - tastați în terminal yarn, apoi yarn dev și ar trebui să scrie localhost 3000 și să puteți
+da click-dreapta --> open in browser și de aici să putem rula testele
