@@ -51,7 +51,7 @@ e în regulă
 **„Username” și „Password” ar trebui scrise în limba română pentru omogenitatea aplicației
 **Sintagma „NU AI CONT? INREGISTREAZA-TE” nu conține diacritice, și nu e situată 
 central sub formularul de login
-
+**Sintagmele „Acest camp nu poate fi gol” din formulare nu conțin diacritice
 
 Metodologia folosita pentru rulare (descrierea metodei de execuție a testului):
 
