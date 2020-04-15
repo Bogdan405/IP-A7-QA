@@ -1,0 +1,60 @@
+Data efectuare test: 15/04
+Identificator test: 023_codrin (to be updated)
+Realizat de: Codrin Donciu	
+Aplicații folosite: Google Chrome, Opera
+Sistem de operare: Windows 10 Home 64-bits
+Procesor: Intel(R) Core(TM) i3-5005U CPU @ 2.00GHz 2.00Ghz
+Memorie RAM (nr. de GB): 4.00 GB
+Nume fișier cod executat la testare: - (neaplicabil)
+Locația fișier cod executat:  - (neaplicabil)
+
+
+Status test: TRECUT
+
+Observații rezultat (erori, afisare, comportament):
+
+Google Chrome 
+** testat 800 x 600 - nefuncțional
+		   - inexistența funcționalității de scroll down face ca accesul
+la butonul de login și crearea de cont să nu fie posibil
+		   - practic jumătate din UI este neafișată
+** testat 1024 x 768 - nefuncțional
+		     - față de rezoluția anterioară, se poate vedea butonul de login și se poate
+introduce și parola de data această
+		     - funcția de înregistrare cont rămâne în continuare inaccesibilă
+** testat 1152 x 864 and higher comportament așteptat
+** (control) testat 1920 x 1080, comportament normal, de așteptat - încadrare în pagină corespunzătoare
+a logo-ului și formularului de login
+
+Opera
+** testat 800 x 600 - nefuncțional
+		   - inexistența funcționalității de scroll down face ca accesul
+la butonul de login și crearea de cont să nu fie posibil
+		   - practic jumătate din UI este neafișată
+** testat 1024 x 768 - funcțional
+		     - se poate vedea butonul de login și se poate
+introduce și parola de data această
+** testat 1280 x 600 - nefuncțional
+		     - inexistența funcționalității de scroll down face ca accesul
+la butonul de login și crearea de cont să nu fie posibil
+		     - funcția de înregistrare cont rămâne în continuare inaccesibilă
+** testat 1280 x 960 and higher comportament așteptat
+** (control) testat 1920 x 1080, comportament normal, de așteptat - încadrare în pagină corespunzătoare
+a logo-ului și formularului de login
+
+
+Alte observații:
+**In general, datorită design-ului paginii, la rezoluțiile în format 16:9 care sunt mai mult lungi decât late,
+partea de jos a paginii nu încape și nu poate fi accesată, iar la rezoluțiile 4:3 (excepție 800 x 600), afișarea
+e în regulă 
+**Design minimalist, „easy on the eye”, ușor de înțeles și straight to the point
+**„Username” și „Password” ar trebui scrise în limba română pentru omogenitatea aplicației
+**Sintagma „NU AI CONT? INREGISTREAZA-TE” nu conține diacritice, și nu e situată 
+central sub formularul de login
+
+
+Metodologia folosita pentru rulare (descrierea metodei de execuție a testului):
+
+**Se rulează serverul și clientul din Visual Code -- adresa localhost:3000 -- în browser-ul
+pe care se testează și se apreciază aspectul aplicației/paginii, începând la rezoluția minimă
+800 x 600 și crescând-o spre 1920 x 1080 (e maximul pentru display-ul folosit în acest test)
