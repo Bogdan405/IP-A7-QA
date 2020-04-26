@@ -1,0 +1,19 @@
+bug: la treagerea de casuta de scriere a postarii apare un bug visual in care
+	butoanele sunt mai mari decat casuta care le contine
+	
+observatie: unele postari se salveaza in tabele de post dar unele se salveaza in tabele privete message,
+	probabil o ok pentru gestiunea visibilitatii, dar e bine de notat
+	
+bug: la logarea cu cont de admin nu se returneaza eroare nici nu se afiseaza alta pagina
+	aparand impresia ca nu se intampla nimic
+
+observatie: un student nu poate face postare catre toti utilizatorii, sunt putine cazuri cand se vrea asta tough deci poate raman asa
+
+bug?: un profesor nu poate trimite mesaj unei grupe de studenti ex: an I A3
+
+observatie: un profesor nu poate trimite post catre un student specific, poate fi necesar daca un numar mic de studenti trebuie anuntati despre ceva
+
+
+
+
+

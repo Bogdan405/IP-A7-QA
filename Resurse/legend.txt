@@ -1,0 +1,19 @@
+Legenda indexare în documentul Testing.docx din „Lab 7” (în lucru)
+
+Format cod: index + tip Test + numeTester
+
+index - între 0 și 99 (pentru o anumită categorie de test, dacă e nevoie de mai mult de 99 de teste, se pot face modificări ulterioare)
+tip Test - categoria testului
+numeTester - cineva din echipa QA : Codrin, Bogdan, Sabina, Alex sau Burghi
+
+Categorii test (generale):
+
+1.	login/logout/creare cont
+2.	user/profesor/tutore/student
+3.	postări, transmitere postări, vizibilitate
+4.	SQL injection, data manipulation (intenții rele)
+5.	Timpii bazei de date, viteze, caractere suportate
+6.	Aspect, dimensiune căsuțe, butoane, text - diferite dimensiuni
+7.	conexiune, întreruperi conexiune, schimbare Wi-Fi, pierdere temporară
+8.	altele
+9.	- spațiu pentru altă categorie  
