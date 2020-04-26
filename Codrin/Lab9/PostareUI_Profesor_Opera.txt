@@ -1,0 +1,37 @@
+---Data efectuare test: 25/04
+---Identificator test: 076_codrin
+---Realizat de: Codrin Donciu	
+---Aplicații folosite: Opera
+---Sistem de operare: Windows 10 Home 64-bits
+---Procesor: Intel(R) Core(TM) i3-5005U CPU @ 2.00GHz 2.00Ghz
+---Memorie RAM (nr. de GB): 4.00 GB
+---Nume fișier cod executat la testare: - (neaplicabil)
+---Locația fișier cod executat:  - (neaplicabil)
+
+
+---Status test: TRECUT
+
+---Observații rezultat (erori, afisare, comportament):
+Testare Pagina Postari 
+** testat 800 x 600 - funcțional
+		    - textul „Postează” iese din caseta butonului de fundal, colorat albastru
+** testat 1024 x 768 - funcțional
+** testat 1152 x 864 and higher comportament așteptat
+** (control) testat 1920 x 1080, comportament normal, de așteptat - încadrare în pagină corespunzătoare
+a formularului de completare a postării
+
+Alte observații:
+** UI este utlizabilă pentru toate rezoluțiile
+** În pagina /Post, mai exact în formularul de creare postări,
+sunt folosite mai multe fonturi pentru text și nu există o omogenitate a stilului
+** Textul trebuie verificat pentru diacritice peste tot
+** Foarte important! La modificarea dimensiunii casetei pentru „Conținut postare”, se modifică lățimea la toate
+casetele din formularul de Creare postare
+
+---Metodologia folosita pentru rulare (descrierea metodei de execuție a testului):
+
+**Se rulează serverul și clientul din Visual Code -- adresa localhost:3000 -- în browser-ul
+pe care se testează și se apreciază aspectul aplicației/paginii, începând la rezoluția minimă
+800 x 600 și crescând-o spre 1920 x 1080 (e maximul pentru display-ul folosit în acest test)
+
+**Login-ul a fost realizat prin 5 conturi de profesori aleator alese din baza de date
