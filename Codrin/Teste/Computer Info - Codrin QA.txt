@@ -1,0 +1,5 @@
+---Aplicații folosite: Google Chrome, Opera, Visual Studio Code
+		       Postman, HeidiSQL, MariaDB
+---Sistem de operare: Windows 10 Home Edition 64-bit
+---Procesor: Intel(R) Core(TM) i3-5005U CPU @ 2.00GHz 2.00Ghz
+---Memorie RAM (nr. de GB): 4.00 GB
