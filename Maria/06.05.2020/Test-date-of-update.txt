@@ -4,7 +4,7 @@ Metodologia folosita pentru rulare (descrierea metodei de executie a testului):A
 
 
 ---Nume fisier cod executat la testare: Succes.postman_collection
----Locatia Fisier cod Executat: 
+---Locatia Fisier cod Executat: https://github.com/Bogdan405/IP-A7-QA/blob/master/Maria/06.05.2020/Succes.postman_collection.json
 
 Testare data de: 05-05-2020
 		---Status test: trecut
@@ -14,7 +14,7 @@ Testare data de: 05-05-2020
 		---Alte observatii (viteza. Usurinta de utilizare):Mesajele de succes au aparut rapid iar procesul a fost usor.
 
 ---Nume fisier cod executat la testare: Esec.postman_collection
----Locatia Fisier cod Executat: 
+---Locatia Fisier cod Executat: https://github.com/Bogdan405/IP-A7-QA/blob/master/Maria/06.05.2020/Esec.postman_collection.json
 
 Testare data de: 05-05-2020
 		---Status test: trecut
