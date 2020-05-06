@@ -1,0 +1,601 @@
+{
+	"info": {
+		"_postman_id": "caea9323-b46c-4222-ace8-93d890bb4540",
+		"name": "Requesturi_Reusite",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Student_TotiUtilizatorii_Anonim",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiZ2dlcmFsZGluaXQiLCJpZCI6MzAsImZpcnN0TmFtZSI6IkdhdnJhIiwibGFzdE5hbWUiOiJHZXJhbGRpbmkiLCJlbWFpbCI6IkdlcmFsZGluaSIsInNlcmlhbE51bWJlciI6IjM1NzUxODYyOFJTTDY0NTQ1OCIsInJvbGUiOiJzdHVkZW50IiwiZ3JvdXAiOiJBNyIsInllYXIiOjMsInR1dG9ySWQiOjkxN30sImlhdCI6MTU4ODc1MTk2MywiZXhwIjoxNTg5MzU2NzYzfQ.DAk6dArtkp7Cwm-7PWNRil25AIKkOeeJS5X2e-lwakc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"isAnonymous\":true,\n\t\"recipients\":\"All\",\n\t\"title\":\"titlul postarii All in cazul in care isAnonymous=true\",\n\t\"content\":\"continutul postarii All in cazul in care isAnonymous=true\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				},
+				"description": "Studentul logat are posibilitatea de a posta, in mod anonim, un mesaj catre toti ceilalti utilizatori. Testul a reusit."
+			},
+			"response": []
+		},
+		{
+			"name": "Student_UnAnumitProfesor",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiZ2dlcmFsZGluaXQiLCJpZCI6MzAsImZpcnN0TmFtZSI6IkdhdnJhIiwibGFzdE5hbWUiOiJHZXJhbGRpbmkiLCJlbWFpbCI6IkdlcmFsZGluaSIsInNlcmlhbE51bWJlciI6IjM1NzUxODYyOFJTTDY0NTQ1OCIsInJvbGUiOiJzdHVkZW50IiwiZ3JvdXAiOiJBNyIsInllYXIiOjMsInR1dG9ySWQiOjkxN30sImlhdCI6MTU4ODc1MTk2MywiZXhwIjoxNTg5MzU2NzYzfQ.DAk6dArtkp7Cwm-7PWNRil25AIKkOeeJS5X2e-lwakc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isAnonymous\": false,\r\n    \"recipients\":\"Professors\",\r\n\r\n    \"professors\":{\r\n\t\t\"recipient\":\"Professor\",\r\n\t\t\"professorId\":1\r\n    },\r\n\r\n    \"title\": \"titlul postarii pentru un anumit profesor(id 1)\",\r\n    \"content\": \"continutul postarii pentru un anumit profesor(id 1)\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				},
+				"description": "Studentul logat poate trimite mesaj catre un profesor selectat. Testul a reusit."
+			},
+			"response": []
+		},
+		{
+			"name": "Student_TotiProfesorii",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiZ2dlcmFsZGluaXQiLCJpZCI6MzAsImZpcnN0TmFtZSI6IkdhdnJhIiwibGFzdE5hbWUiOiJHZXJhbGRpbmkiLCJlbWFpbCI6IkdlcmFsZGluaSIsInNlcmlhbE51bWJlciI6IjM1NzUxODYyOFJTTDY0NTQ1OCIsInJvbGUiOiJzdHVkZW50IiwiZ3JvdXAiOiJBNyIsInllYXIiOjMsInR1dG9ySWQiOjkxN30sImlhdCI6MTU4ODc1MTk2MywiZXhwIjoxNTg5MzU2NzYzfQ.DAk6dArtkp7Cwm-7PWNRil25AIKkOeeJS5X2e-lwakc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isAnonymous\": false,\r\n    \"recipients\":\"Professors\",\r\n\r\n    \"professors\":{ \r\n\t\t\"recipient\":\"All\"\r\n    },\r\n    \r\n    \"title\": \"titlul postarii All Professors\",\r\n    \"content\": \"continutul postarii All Professors\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				},
+				"description": "Studentul logat poate posta un mesaj pentru toti profesorii. Testul a reusit."
+			},
+			"response": []
+		},
+		{
+			"name": "Student_GrupeMentorat_DinCareFaceParte",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiZ2dlcmFsZGluaXQiLCJpZCI6MzAsImZpcnN0TmFtZSI6IkdhdnJhIiwibGFzdE5hbWUiOiJHZXJhbGRpbmkiLCJlbWFpbCI6IkdlcmFsZGluaSIsInNlcmlhbE51bWJlciI6IjM1NzUxODYyOFJTTDY0NTQ1OCIsInJvbGUiOiJzdHVkZW50IiwiZ3JvdXAiOiJBNyIsInllYXIiOjMsInR1dG9ySWQiOjkxN30sImlhdCI6MTU4ODc1MTk2MywiZXhwIjoxNTg5MzU2NzYzfQ.DAk6dArtkp7Cwm-7PWNRil25AIKkOeeJS5X2e-lwakc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isAnonymous\": false,\r\n    \"recipients\":\"Groupe\",\r\n\r\n    \"groupe\":{ \r\n\t\t\"groupeId\":17\r\n    },\r\n\r\n    \"title\": \"titlul postarii pentru grupa de mentorat(id 17)\",\r\n    \"content\": \"continutul postarii pentru grupa de mentorat(id 17)\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				},
+				"description": "Studentul logat poate trimite mesaj catre grupa de mentorat din care face parte.Testul a reusit."
+			},
+			"response": []
+		},
+		{
+			"name": "Student_Tutore",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiZ2dlcmFsZGluaXQiLCJpZCI6MzAsImZpcnN0TmFtZSI6IkdhdnJhIiwibGFzdE5hbWUiOiJHZXJhbGRpbmkiLCJlbWFpbCI6IkdlcmFsZGluaSIsInNlcmlhbE51bWJlciI6IjM1NzUxODYyOFJTTDY0NTQ1OCIsInJvbGUiOiJzdHVkZW50IiwiZ3JvdXAiOiJBNyIsInllYXIiOjMsInR1dG9ySWQiOjkxN30sImlhdCI6MTU4ODc1MTk2MywiZXhwIjoxNTg5MzU2NzYzfQ.DAk6dArtkp7Cwm-7PWNRil25AIKkOeeJS5X2e-lwakc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isAnonymous\": false,\r\n    \"recipients\":\"Professors\", \r\n\r\n    \"professors\":{ \r\n\t\t\"recipient\":\"Tutor\"\r\n    },\r\n\r\n    \"title\": \"titlu postare Tutor\",\r\n    \"content\": \"continut postare Tutor\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				},
+				"description": "Studentul logat poate trimite mesaj catre un profesor tutore. Testul a reusit."
+			},
+			"response": []
+		},
+		{
+			"name": "Student_TotiProfesorii_Anonim",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiZ2dlcmFsZGluaXQiLCJpZCI6MzAsImZpcnN0TmFtZSI6IkdhdnJhIiwibGFzdE5hbWUiOiJHZXJhbGRpbmkiLCJlbWFpbCI6IkdlcmFsZGluaSIsInNlcmlhbE51bWJlciI6IjM1NzUxODYyOFJTTDY0NTQ1OCIsInJvbGUiOiJzdHVkZW50IiwiZ3JvdXAiOiJBNyIsInllYXIiOjMsInR1dG9ySWQiOjkxN30sImlhdCI6MTU4ODc1MTk2MywiZXhwIjoxNTg5MzU2NzYzfQ.DAk6dArtkp7Cwm-7PWNRil25AIKkOeeJS5X2e-lwakc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isAnonymous\": true, \r\n    \"recipients\":\"Professors\",\r\n\r\n    \"professors\":{ \r\n\t\t\"recipient\":\"All\"\r\n    },\r\n\r\n    \"title\": \"titlu postare All Professor in cazul in care isAnonymous=true\",\r\n    \"content\": \"continut postare All Professors in cazul in care isAnonymous=true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				},
+				"description": "Studentul logat poate posta un mesaj, in mod anonim, catre toti profesorii. Testul a reusit."
+			},
+			"response": []
+		},
+		{
+			"name": "Student_UnAnumitProfesor_Anonim",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiZ2dlcmFsZGluaXQiLCJpZCI6MzAsImZpcnN0TmFtZSI6IkdhdnJhIiwibGFzdE5hbWUiOiJHZXJhbGRpbmkiLCJlbWFpbCI6IkdlcmFsZGluaSIsInNlcmlhbE51bWJlciI6IjM1NzUxODYyOFJTTDY0NTQ1OCIsInJvbGUiOiJzdHVkZW50IiwiZ3JvdXAiOiJBNyIsInllYXIiOjMsInR1dG9ySWQiOjkxN30sImlhdCI6MTU4ODc1MTk2MywiZXhwIjoxNTg5MzU2NzYzfQ.DAk6dArtkp7Cwm-7PWNRil25AIKkOeeJS5X2e-lwakc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isAnonymous\": true,\r\n    \"recipients\":\"Professors\",\r\n\r\n    \"professors\":{ \r\n\t\t\"recipient\":\"Professor\",\r\n\t\t\"professorId\":1\r\n    },\r\n\r\n    \"title\": \"titlu postare pentru un anumit profesor(id 1) in cazul in care isAnonymous=true\",\r\n    \"content\": \"continut postare pentru un anumit profesor(id 1) in cazul in care isAnonymous=true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				},
+				"description": "Studentul logat poate trimite, in mod anonim,un mesaj catre un profesor selectat. Testul a reusit. "
+			},
+			"response": []
+		},
+		{
+			"name": "Student_GrupeFacultate_Anonim",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiZ2dlcmFsZGluaXQiLCJpZCI6MzAsImZpcnN0TmFtZSI6IkdhdnJhIiwibGFzdE5hbWUiOiJHZXJhbGRpbmkiLCJlbWFpbCI6IkdlcmFsZGluaSIsInNlcmlhbE51bWJlciI6IjM1NzUxODYyOFJTTDY0NTQ1OCIsInJvbGUiOiJzdHVkZW50IiwiZ3JvdXAiOiJBNyIsInllYXIiOjMsInR1dG9ySWQiOjkxN30sImlhdCI6MTU4ODc1MTk2MywiZXhwIjoxNTg5MzU2NzYzfQ.DAk6dArtkp7Cwm-7PWNRil25AIKkOeeJS5X2e-lwakc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isAnonymous\": true, \r\n    \"recipients\":\"Groupe\", \r\n\r\n\r\n    \"groupe\":{ \r\n\t\t\"year\":1,\r\n\t\t\"letter\":\"A\",\r\n\t\t\"number\":3\r\n    },\r\n\r\n    \"title\": \"titlu postare pentru grupe de facultate(1A3) in cazul in care isAnonymous=true\",\r\n    \"content\": \"continut postare pentru grupe de facultate(1A3) in cazul in care isAnonymous=true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				},
+				"description": "Studentul logat poate trimite, in mod anonim, un mesaj catre o grupa de facultate specificata. Testul a reusit."
+			},
+			"response": []
+		},
+		{
+			"name": "Student_GrupeFacultate",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiZ2dlcmFsZGluaXQiLCJpZCI6MzAsImZpcnN0TmFtZSI6IkdhdnJhIiwibGFzdE5hbWUiOiJHZXJhbGRpbmkiLCJlbWFpbCI6IkdlcmFsZGluaSIsInNlcmlhbE51bWJlciI6IjM1NzUxODYyOFJTTDY0NTQ1OCIsInJvbGUiOiJzdHVkZW50IiwiZ3JvdXAiOiJBNyIsInllYXIiOjMsInR1dG9ySWQiOjkxN30sImlhdCI6MTU4ODc1MTk2MywiZXhwIjoxNTg5MzU2NzYzfQ.DAk6dArtkp7Cwm-7PWNRil25AIKkOeeJS5X2e-lwakc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isAnonymous\": false, \r\n    \"recipients\":\"Groupe\", \r\n\r\n\r\n    \"groupe\":{ \r\n\t\t\"year\":1,\r\n\t\t\"letter\":\"A\",\r\n\t\t\"number\":3\r\n    },\r\n\r\n    \"title\": \"titlu postare pentru grupe de facultate(1A3)\",\r\n    \"content\": \"continut postare pentru grupe de facultate(1A3)\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				},
+				"description": "Studentul logat poate trimite un mesaj catre o grupa de facultate. Testul a reusit."
+			},
+			"response": []
+		},
+		{
+			"name": "Student_GrupeMentorat_Anonim",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiZ2dlcmFsZGluaXQiLCJpZCI6MzAsImZpcnN0TmFtZSI6IkdhdnJhIiwibGFzdE5hbWUiOiJHZXJhbGRpbmkiLCJlbWFpbCI6IkdlcmFsZGluaSIsInNlcmlhbE51bWJlciI6IjM1NzUxODYyOFJTTDY0NTQ1OCIsInJvbGUiOiJzdHVkZW50IiwiZ3JvdXAiOiJBNyIsInllYXIiOjMsInR1dG9ySWQiOjkxN30sImlhdCI6MTU4ODc1MTk2MywiZXhwIjoxNTg5MzU2NzYzfQ.DAk6dArtkp7Cwm-7PWNRil25AIKkOeeJS5X2e-lwakc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isAnonymous\": true, \r\n    \"recipients\":\"Groupe\", \r\n\r\n    \"groupe\":{ \r\n\t\t\"groupeId\":5\r\n    },\r\n\r\n    \"title\": \"titlu postare pentru grupe de mentorat(id 5) in cazul in care isAnonymous=true\",\r\n    \"content\": \"continut postare pentru grupe de mentorat(id 5) in cazul in care isAnonymous=true\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				},
+				"description": "Studentul logat poate trimite, in mod anonim, mesaje catre o grupa de mentorat. Testul a reusit."
+			},
+			"response": []
+		},
+		{
+			"name": "Student_Tutore_Anonim",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiZ2dlcmFsZGluaXQiLCJpZCI6MzAsImZpcnN0TmFtZSI6IkdhdnJhIiwibGFzdE5hbWUiOiJHZXJhbGRpbmkiLCJlbWFpbCI6IkdlcmFsZGluaSIsInNlcmlhbE51bWJlciI6IjM1NzUxODYyOFJTTDY0NTQ1OCIsInJvbGUiOiJzdHVkZW50IiwiZ3JvdXAiOiJBNyIsInllYXIiOjMsInR1dG9ySWQiOjkxN30sImlhdCI6MTU4ODc1MTk2MywiZXhwIjoxNTg5MzU2NzYzfQ.DAk6dArtkp7Cwm-7PWNRil25AIKkOeeJS5X2e-lwakc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isAnonymous\": true,\r\n    \"recipients\":\"Professors\", \r\n\r\n    \"professors\":{ \r\n\t\t\"recipient\":\"Tutor\"\r\n    },\r\n\r\n    \"title\": \"titlu postare Tutor in cazul in care isAnonymous=true\",\r\n    \"content\": \"continut postare Tutor in cazul in care isAnonymous=true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				},
+				"description": "Studentul logat poate trimite, in mod anonim, mesaje catre un tutore. Testul a reusit."
+			},
+			"response": []
+		},
+		{
+			"name": "Student_Postare_CaractereRomanesti",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiZ2dlcmFsZGluaXQiLCJpZCI6MzAsImZpcnN0TmFtZSI6IkdhdnJhIiwibGFzdE5hbWUiOiJHZXJhbGRpbmkiLCJlbWFpbCI6IkdlcmFsZGluaSIsInNlcmlhbE51bWJlciI6IjM1NzUxODYyOFJTTDY0NTQ1OCIsInJvbGUiOiJzdHVkZW50IiwiZ3JvdXAiOiJBNyIsInllYXIiOjMsInR1dG9ySWQiOjkxN30sImlhdCI6MTU4ODc1MTk2MywiZXhwIjoxNTg5MzU2NzYzfQ.DAk6dArtkp7Cwm-7PWNRil25AIKkOeeJS5X2e-lwakc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isAnonymous\": false,\r\n    \"recipients\":\"All\",\r\n\r\n\r\n    \"title\": \"titlul postării\",\r\n    \"content\": \"conținutul postării\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				},
+				"description": "Studentul logat poate trimite mesaje care contin si caractere specifice romanesti. Testul a reusit."
+			},
+			"response": []
+		},
+		{
+			"name": "Student_TotiUtilizatorii",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiZ2dlcmFsZGluaXQiLCJpZCI6MzAsImZpcnN0TmFtZSI6IkdhdnJhIiwibGFzdE5hbWUiOiJHZXJhbGRpbmkiLCJlbWFpbCI6IkdlcmFsZGluaSIsInNlcmlhbE51bWJlciI6IjM1NzUxODYyOFJTTDY0NTQ1OCIsInJvbGUiOiJzdHVkZW50IiwiZ3JvdXAiOiJBNyIsInllYXIiOjMsInR1dG9ySWQiOjkxN30sImlhdCI6MTU4ODc1MTk2MywiZXhwIjoxNTg5MzU2NzYzfQ.DAk6dArtkp7Cwm-7PWNRil25AIKkOeeJS5X2e-lwakc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isAnonymous\": false,\r\n    \"recipients\":\"All\",\r\n\r\n    \"title\": \"titlul postarii All\",\r\n    \"content\": \"continutul postarii All\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				},
+				"description": "Studentul logat poate trimite mesaje catre toti utilizatorii. Testul a reusit."
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiZ2dlcmFsZGluaXQiLCJpZCI6MzAsImZpcnN0TmFtZSI6IkdhdnJhIiwibGFzdE5hbWUiOiJHZXJhbGRpbmkiLCJlbWFpbCI6IkdlcmFsZGluaSIsInNlcmlhbE51bWJlciI6IjM1NzUxODYyOFJTTDY0NTQ1OCIsInJvbGUiOiJzdHVkZW50IiwiZ3JvdXAiOiJBNyIsInllYXIiOjMsInR1dG9ySWQiOjkxN30sImlhdCI6MTU4ODc1MTk2MywiZXhwIjoxNTg5MzU2NzYzfQ.DAk6dArtkp7Cwm-7PWNRil25AIKkOeeJS5X2e-lwakc",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "9ab04fcb-a9ec-48de-b439-e25343fa28f5",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "38963271-3e93-4b4a-a7a4-1f1c537a0918",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
