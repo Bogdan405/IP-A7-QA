@@ -1,0 +1,24 @@
+---Realizat de Gafenco Maria-Alexandra + identificator:-
+
+Metodologia folosita pentru rulare (descrierea metodei de executie a testului):Am pornit HeidiSQL, am deschis Visual Studio Code si m-am conectat la server prin comanda "npm start" si la Student prin comanda "yarn dev".Am deschis mai apoi Postman si am creat doua colectii, Succes si Esec, in care am inserat mai multe teste legate de abilitatea utilizatorilor logati in aplicatie de a posta. Am ales un cont de profesor din baza de date, m-am logat cu acesta si am preluat tokenul in vederea folosirii acetuia in teste(folosind metoda POST). Mai apoi am creat testele(requesturile) folosind metoda GET.
+
+
+---Nume fisier cod executat la testare: Succes.postman_collection
+---Locatia Fisier cod Executat: 
+
+Testare data de: 05-05-2020
+		---Status test: trecut
+		---Probleme constatate:-
+		
+		
+		---Alte observatii (viteza. Usurinta de utilizare):Mesajele de succes au aparut rapid iar procesul a fost usor.
+
+---Nume fisier cod executat la testare: Esec.postman_collection
+---Locatia Fisier cod Executat: 
+
+Testare data de: 05-05-2020
+		---Status test: trecut
+		---Probleme constatate:Un profesor care nu e tutor poate trimite mesaje unei grupe de tutorat, mesaje de peste 5000 caractere lungime pot fi trimise, titlul mesajului poate contine caractere care nu fac parte din alfabetul roman, la grupe(an, litera, numar) pot fi inserate orice valori(inexistente in baza de date, ex an:200) 
+		
+		
+		---Alte observatii (viteza. Usurinta de utilizare):Mesajele de succes au aparut rapid iar procesul a fost usor.
