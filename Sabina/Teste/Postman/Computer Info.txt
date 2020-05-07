@@ -1,0 +1,4 @@
+---Aplicatii folosite:Visual Studio Code, Postman, HeidiSQL, MariaDB, Opera
+---Sistem de operare:Windows 10 Home(x64)
+---Procesor:Intel Core i5-8250U, 1.6Gh
+---Memorie RAM (nr. de GB): 8.00 GB
