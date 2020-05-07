@@ -1,0 +1,18 @@
+---Realizat de + identificator:
+
+---Nume fisier cod executat la testare: 
+---Locatia Fisier cod Executat:
+
+
+Metodologia folosita pentru rulare (descrierea metodei de executie a testului):
+	Am deschis baza de date cu HeidiSQL.
+	Din Visual Studio Code am deschis serverul si clientul
+	Am intrat in postman unde creat un request de tipul "POST" am pus adresa http://localhost:8000/api/auth/login
+	S-a incercat conectarea cu un user care nu avea rol
+
+
+Testare data de: 05/05/2020 
+		---Status test: Esuat
+		---Probleme constatate: dupa ce am dat login nu am primit niciun raspuns de la server
+
+		
