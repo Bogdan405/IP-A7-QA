@@ -1,0 +1,21 @@
+---Realizat de + identificator:
+
+---Nume fisier cod executat la testare: 
+---Locatia Fisier cod Executat:
+
+
+Metodologia folosita pentru rulare (descrierea metodei de executie a testului):
+	Am deschis baza de date cu HeidiSQL.
+	Din Visual Studio Code am deschis serverul si clientul
+	Am intrat in postman unde creat un request de tipul "POST" am pus adresa http://localhost:8000/api/auth/register
+	S-a incercat inregistrarea unui nou cont in care erau diferite parola si confirmarea ei
+
+
+Testare data de: 05/05/2020 
+		---Status test: Esuat
+		---Probleme constatate: Inregistrarea a avut loc cu succes desi parola si confirmarea ei erau diferite.
+		   Verificare nu este case sensitive, avand mai multe caractere mari in parole decat in confirmare.
+		   Ex: Parola - 1234ABCeeeeee
+		   ConfParola - 1234ABCEEEEEE
+
+		

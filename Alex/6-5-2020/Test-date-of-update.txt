@@ -1,0 +1,30 @@
+---Realizat de + identificator:
+
+---Nume fisier cod executat la testare: 
+---Locatia Fisier cod Executat:
+
+
+Metodologia folosita pentru ruare (descrierea metodei de executie a testului):
+
+
+Testare data de: xx-dd-gg 
+		---Status test: esuat/trecut
+		---Probleme constatate:
+		
+		
+		---Alte observatii (viteza. Usurinta de utilizare):
+
+Testare data de: rr-rr-rr 
+		---Status test: esuat/trecut
+		---Probleme constatate:
+		
+		
+		---Alte observatii (viteza. Usurinta de utilizare):
+
+Testare data de: 11-gg-66 
+		---Status test: esuat/trecut
+		---Probleme constatate:
+		
+		
+		---Alte observatii (viteza. Usurinta de utilizare):
+		

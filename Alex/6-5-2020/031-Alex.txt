@@ -1,0 +1,19 @@
+---Realizat de + identificator:
+
+---Nume fisier cod executat la testare: 
+---Locatia Fisier cod Executat:
+
+
+Metodologia folosita pentru rulare (descrierea metodei de executie a testului):
+	Am deschis baza de date cu HeidiSQL.
+	Din Visual Studio Code am deschis serverul si clientul
+	Am intrat in postman unde creat un request de tipul "POST" am pus adresa http://localhost:8000/api/auth/register
+	S-a incercat inregistrarea unui nou cont care nu avea parola identica cu confirmarea parolei
+
+
+Testare data de: 05/05/2020 
+		---Status test: Esuat
+		---Probleme constatate: Parola a avut un set de caractere iar confirmarea parolei a avut acelasi set de caractere
+		   dar in ordine diferita. Inregistrarea a avut loc cu succes.
+
+		
