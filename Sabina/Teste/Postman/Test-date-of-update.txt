@@ -1,0 +1,22 @@
+---Realizat de Petrisor Sabina + identificator: --
+
+---Nume fisier cod executat la testare: post.ts
+---Locatia Fisier cod Executat:Final Project/Server/fiimentor/route/post.ts
+
+
+Metodologia folosita pentru rulare (descrierea metodei de executie a testului):In Visual Studio Code m-am conectat la Server, portul 8000(folosind comanda npm start), iar apoi la Client, portul 3000(folosind comanda yarn dev). In programul Postman am creat doua colectii separate("Requesturi_Reusite" si "Requesturi_Esuate"), in care am introdus mai multe teste care tin de postari pe care utilizatori logati ca student le pot face. Pentru inceput m-am conectat la portul 8000, cu un cont de student, dupa care am primit un token pe care l-am folosit pentru a creea requesturi si a testa daca postarile functioneaza in mod normal. Pentru a ma conecta m-am folosit de comanda POST, iar pentru a creea requesturile m-am folosit de comanda GET.
+
+Testare data de: 05-05-2020
+		---Status test: trecut
+		---Probleme constatate: --
+		
+		---Alte observatii (viteza. Usurinta de utilizare): Toate testele care au presupus postari in conditii normale(selectarea campurilor(Vizibilitate, Grupe, An, Semian etc.), continut ce contine text care nu include caractere straine(din limba coreeana, spre exemplu)), au returnat succes. Mesajele de succes au aparut rapid, iar procesul de testare a fost usor.
+
+Testare data de: 06-05-2020 
+		---Status test: trecut
+		---Probleme constatate: --
+		
+		
+		---Alte observatii (viteza. Usurinta de utilizare): Toate testele care au presupus postari in conditii normale(selectarea campurilor(Vizibilitate, Grupe, An, Semian etc.), continut ce contine text care nu include caractere straine(din limba coreeana, spre exemplu)), au returnat succes. Mesajele de succes au aparut rapid, iar procesul de testare a fost usor.
+
+		

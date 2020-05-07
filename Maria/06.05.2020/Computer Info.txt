@@ -1,0 +1,4 @@
+---Aplicatii folosite: Visual Studio Code, HeidiSQL, Postman
+---Sistem de operare: Windows 10
+---Procesor: Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz
+---Memorie RAM (nr. de GB): 8,00 GB

@@ -1,0 +1,514 @@
+{
+	"info": {
+		"_postman_id": "e6f603b6-4b1b-4d18-b2c9-2ac12d585746",
+		"name": "TestareQAPATH",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Teste reusite",
+			"item": [
+				{
+					"name": "TestLoginProf",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoic3NjdWZmaGFtcmEiLCJpZCI6OTgzLCJmaXJzdE5hbWUiOiJTaGFuZGVlIiwibGFzdE5hbWUiOiJTY3VmZmhhbSIsImVtYWlsIjoiU2N1ZmZoYW0iLCJzZXJpYWxOdW1iZXIiOiI0MjkzMzM4MDhFU0w3NjQ5NzAiLCJyb2xlIjoicHJvZmVzc29yIiwiYWNhZGVtaWNSYW5rIjoiQXNzb2NpYXRlIHByb2Zlc3NvciJ9LCJpYXQiOjE1ODg2OTQzNDEsImV4cCI6MTU4OTI5OTE0MX0.UuNT-D19l7gX2BiGc9M_nZc7fBi7FbmDj6LKfOLAytE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"username\": \"sscuffhamra\",\r\n\t\"password\": \"dgUrgFeHI\"\r\n\t\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TesLoginElev",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"gsrawleyf2\",\r\n    \"password\": \"yVCePVvsg4L\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TestLoginInvalidUsername",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"rable332\",\n\t\"password\":\"123456789lL\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TestLoginInvalidPassword",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"mleveringtonqo\",\n\t\"password\":\"dULke6FNT5Xx\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TestRegisterInvalidSerialNumber",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"lastName\":\"ion\",\n\t\"firstName\":\"costelus\",\n\t\"serialNumber\":\"123123123abc123123\",\n\t\"username\":\"notpresent\",\n\t\"password\":\"123456Qq\",\n\t\"confPassword\":\"123456Qq\",\n\t\"email\":\"ioncostelus@info.uaic.ro\"\n\t\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TestRegisterTakenSerialNumber",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"lastName\":\"ion\",\n\t\"firstName\":\"costelus\",\n\t\"serialNumber\":\"214358741RSL882712\",\n\t\"username\":\"notpresent\",\n\t\"password\":\"123456Qq\",\n\t\"confPassword\":\"123456Qq\",\n\t\"email\":\"ioncostelus@info.uaic.ro\"\n\t\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TestRegisterOK",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"lastName\":\"ion\",\n\t\"firstName\":\"costelus\",\n\t\"serialNumber\":\"214358741RSL882714\",\n\t\"username\":\"notpresent\",\n\t\"password\":\"123456Qq\",\n\t\"confPassword\":\"123456Qq\",\n\t\"email\":\"ioncostelus@info.uaic.ro\"\n\t\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TestRegisterUsernameTaken",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"lastName\":\"ion\",\n\t\"firstName\":\"costelus\",\n\t\"serialNumber\":\"214358741RSL882717\",\n\t\"username\":\"notpresent\",\n\t\"password\":\"123456Qq\",\n\t\"confPassword\":\"123456Qq\",\n\t\"email\":\"ioncostelus@info.uaic.ro\"\n\t\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TestRegisterUsernameWithSpace",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"lastName\":\"ion\",\n\t\"firstName\":\"costelus\",\n\t\"serialNumber\":\"214358741RSL882717\",\n\t\"username\":\"Not PreSenT\",\n\t\"password\":\"123456Qq\",\n\t\"confPassword\":\"123456Qq\",\n\t\"email\":\"ioncostelus@info.uaic.ro\"\n\t\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Teste esuate",
+			"item": [
+				{
+					"name": "TestLoginNoRole",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"rable32\",\n\t\"password\":\"123456789lL\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						},
+						"description": "La incercarea unui login fara rol nu se primeste niciun raspuns de la server.\n"
+					},
+					"response": []
+				},
+				{
+					"name": "TestRegisterDiffCharacterOrderOnPassword/confPassword",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"lastName\":\"ion\",\n\t\"firstName\":\"costelus\",\n\t\"serialNumber\":\"214358741RSL882119\",\n\t\"username\":\"NoTPreSenTeee\",\n\t\"password\":\"1q2q3q4q5q6qQ\",\n\t\"confPassword\":\"12345Q6qqqqqq\",\n\t\"email\":\"ioncostelus@info.uaic.ro\"\n\t\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						},
+						"description": "Daca parola are un set de caractere iar confirmarea parolei are acelasi set de caractere dar in complet alta ordine se considera identice"
+					},
+					"response": []
+				},
+				{
+					"name": "TestLoginAdmin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"mboshierrn\",\n\t\"password\":\"2UN43WOGQ\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						},
+						"description": "Nu se returneaza niciun status la logarea ca admin"
+					},
+					"response": []
+				},
+				{
+					"name": "TestRegisterWithSameMail",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"lastName\":\"ion\",\n\t\"firstName\":\"costelus\",\n\t\"serialNumber\":\"214358741RSL882767\",\n\t\"username\":\"NotePReSenTe\",\n\t\"password\":\"123456Qq\",\n\t\"confPassword\":\"123456Qq\",\n\t\"email\":\"ioncostelus@info.uaic.ro\"\n\t\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						},
+						"description": "We can register numerous accounts under the same email adress"
+					},
+					"response": []
+				},
+				{
+					"name": "TestRegisterDifferentCharactersPassword/ConfPassword",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"lastName\":\"ion\",\n\t\"firstName\":\"costelus\",\n\t\"serialNumber\":\"214358741RSL882967\",\n\t\"username\":\"NotePReSenTee\",\n\t\"password\":\"12345678eEE\",\n\t\"confPassword\":\"12345678eeE\",\n\t\"email\":\"ioncostelus@info.uaic.ro\"\n\t\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						},
+						"description": "Parola si verificarea sa au caractere diferite.\nMai multe caractere \"E\" in parola decat in confirmarea ei."
+					},
+					"response": []
+				},
+				{
+					"name": "TestRegisterUsernameOnlyWithSpaces",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"lastName\":\"ion\",\n\t\"firstName\":\"costelus\",\n\t\"serialNumber\":\"214358741RSL882727\",\n\t\"username\":\"                               \",\n\t\"password\":\"123456Qq\",\n\t\"confPassword\":\"123456Qq\",\n\t\"email\":\"ioncostelus@info.uaic.ro\"\n\t\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,430 @@
+{
+	"info": {
+		"_postman_id": "8511e44b-46b8-44ee-807c-200946441a32",
+		"name": "Succes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Profesor-All",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaHRpcHBpbmdwMSIsImlkIjo5MDIsImZpcnN0TmFtZSI6IkhhbGwiLCJsYXN0TmFtZSI6IlRpcHBpbmciLCJlbWFpbCI6IlRpcHBpbmciLCJzZXJpYWxOdW1iZXIiOiI5NDAwODczODNSU0wxMjAyODUiLCJyb2xlIjoicHJvZmVzc29yIiwiYWNhZGVtaWNSYW5rIjoiQXNzaXN0YW50IHByb2Zlc3NvciIsImdyb3VwSWQiOjJ9LCJpYXQiOjE1ODg2MTc5OTgsImV4cCI6MTU4OTIyMjc5OH0.JUym9WY06pfHv_eY-gKTFdc7TzUH9k5oY6pi02Qna8w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"isAnonymous\": false,\n    \"recipients\":\"All\",\n    \"title\": \"titlul postarii All\",\n    \"content\": \"continutul postarii All\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profesor-All(Anonim)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaHRpcHBpbmdwMSIsImlkIjo5MDIsImZpcnN0TmFtZSI6IkhhbGwiLCJsYXN0TmFtZSI6IlRpcHBpbmciLCJlbWFpbCI6IlRpcHBpbmciLCJzZXJpYWxOdW1iZXIiOiI5NDAwODczODNSU0wxMjAyODUiLCJyb2xlIjoicHJvZmVzc29yIiwiYWNhZGVtaWNSYW5rIjoiQXNzaXN0YW50IHByb2Zlc3NvciIsImdyb3VwSWQiOjJ9LCJpYXQiOjE1ODg2MTc5OTgsImV4cCI6MTU4OTIyMjc5OH0.JUym9WY06pfHv_eY-gKTFdc7TzUH9k5oY6pi02Qna8w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"isAnonymous\": true,\n    \"recipients\":\"All\",\n    \"title\": \"titlul postarii All\",\n    \"content\": \"continutul postarii All\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profesor-AllProfs",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaHRpcHBpbmdwMSIsImlkIjo5MDIsImZpcnN0TmFtZSI6IkhhbGwiLCJsYXN0TmFtZSI6IlRpcHBpbmciLCJlbWFpbCI6IlRpcHBpbmciLCJzZXJpYWxOdW1iZXIiOiI5NDAwODczODNSU0wxMjAyODUiLCJyb2xlIjoicHJvZmVzc29yIiwiYWNhZGVtaWNSYW5rIjoiQXNzaXN0YW50IHByb2Zlc3NvciIsImdyb3VwSWQiOjJ9LCJpYXQiOjE1ODg2MTc5OTgsImV4cCI6MTU4OTIyMjc5OH0.JUym9WY06pfHv_eY-gKTFdc7TzUH9k5oY6pi02Qna8w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"isAnonymous\": false,\n    \"recipients\":\"Professors\",\n    \"professors\":{\n        \"recipient\":\"All\" \n    },\n    \"title\": \"titlul postarii profs all\",\n    \"content\": \"continutul postarii profs all\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profesor-AllProfs(Anonim)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaHRpcHBpbmdwMSIsImlkIjo5MDIsImZpcnN0TmFtZSI6IkhhbGwiLCJsYXN0TmFtZSI6IlRpcHBpbmciLCJlbWFpbCI6IlRpcHBpbmciLCJzZXJpYWxOdW1iZXIiOiI5NDAwODczODNSU0wxMjAyODUiLCJyb2xlIjoicHJvZmVzc29yIiwiYWNhZGVtaWNSYW5rIjoiQXNzaXN0YW50IHByb2Zlc3NvciIsImdyb3VwSWQiOjJ9LCJpYXQiOjE1ODg2MTc5OTgsImV4cCI6MTU4OTIyMjc5OH0.JUym9WY06pfHv_eY-gKTFdc7TzUH9k5oY6pi02Qna8w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"isAnonymous\": true,\n    \"recipients\":\"Professors\",\n    \"professors\":{\n        \"recipient\":\"All\" \n    },\n    \"title\": \"titlul postarii profs all\",\n    \"content\": \"continutul postarii profs all\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profesor-Prof",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaHRpcHBpbmdwMSIsImlkIjo5MDIsImZpcnN0TmFtZSI6IkhhbGwiLCJsYXN0TmFtZSI6IlRpcHBpbmciLCJlbWFpbCI6IlRpcHBpbmciLCJzZXJpYWxOdW1iZXIiOiI5NDAwODczODNSU0wxMjAyODUiLCJyb2xlIjoicHJvZmVzc29yIiwiYWNhZGVtaWNSYW5rIjoiQXNzaXN0YW50IHByb2Zlc3NvciIsImdyb3VwSWQiOjJ9LCJpYXQiOjE1ODg2MTc5OTgsImV4cCI6MTU4OTIyMjc5OH0.JUym9WY06pfHv_eY-gKTFdc7TzUH9k5oY6pi02Qna8w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"isAnonymous\": false,\n    \"recipients\":\"Professors\",\n    \"professors\":{\n        \"recipient\":\"Professor\",\n        \"professorId\": 1\n    } ,\n    \"title\": \"titlul postarii specific prof\",\n    \"content\": \"continutul postarii specific prof\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profesor-Prof(Anonim)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaHRpcHBpbmdwMSIsImlkIjo5MDIsImZpcnN0TmFtZSI6IkhhbGwiLCJsYXN0TmFtZSI6IlRpcHBpbmciLCJlbWFpbCI6IlRpcHBpbmciLCJzZXJpYWxOdW1iZXIiOiI5NDAwODczODNSU0wxMjAyODUiLCJyb2xlIjoicHJvZmVzc29yIiwiYWNhZGVtaWNSYW5rIjoiQXNzaXN0YW50IHByb2Zlc3NvciIsImdyb3VwSWQiOjJ9LCJpYXQiOjE1ODg2MTc5OTgsImV4cCI6MTU4OTIyMjc5OH0.JUym9WY06pfHv_eY-gKTFdc7TzUH9k5oY6pi02Qna8w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"isAnonymous\": true,\n    \"recipients\":\"Professors\",\n    \"professors\":{\n        \"recipient\":\"Professor\",\n        \"professorId\": 1\n    } ,\n    \"title\": \"titlul postarii specific prof\",\n    \"content\": \"continutul postarii specific prof\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profesor-Tutor",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaHRpcHBpbmdwMSIsImlkIjo5MDIsImZpcnN0TmFtZSI6IkhhbGwiLCJsYXN0TmFtZSI6IlRpcHBpbmciLCJlbWFpbCI6IlRpcHBpbmciLCJzZXJpYWxOdW1iZXIiOiI5NDAwODczODNSU0wxMjAyODUiLCJyb2xlIjoicHJvZmVzc29yIiwiYWNhZGVtaWNSYW5rIjoiQXNzaXN0YW50IHByb2Zlc3NvciIsImdyb3VwSWQiOjJ9LCJpYXQiOjE1ODg2MTc5OTgsImV4cCI6MTU4OTIyMjc5OH0.JUym9WY06pfHv_eY-gKTFdc7TzUH9k5oY6pi02Qna8w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"isAnonymous\": false,\n    \"recipients\":\"Professors\",\n    \"professors\":{\n        \"recipient\":\"Tutor\"\n    } ,\n    \"title\": \"titlul postarii pt tutor\",\n    \"content\": \"continutul postarii pt tutor\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profesor-Tutor(Anonim)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaHRpcHBpbmdwMSIsImlkIjo5MDIsImZpcnN0TmFtZSI6IkhhbGwiLCJsYXN0TmFtZSI6IlRpcHBpbmciLCJlbWFpbCI6IlRpcHBpbmciLCJzZXJpYWxOdW1iZXIiOiI5NDAwODczODNSU0wxMjAyODUiLCJyb2xlIjoicHJvZmVzc29yIiwiYWNhZGVtaWNSYW5rIjoiQXNzaXN0YW50IHByb2Zlc3NvciIsImdyb3VwSWQiOjJ9LCJpYXQiOjE1ODg2MTc5OTgsImV4cCI6MTU4OTIyMjc5OH0.JUym9WY06pfHv_eY-gKTFdc7TzUH9k5oY6pi02Qna8w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"isAnonymous\": true,\n    \"recipients\":\"Professors\",\n    \"professors\":{\n        \"recipient\":\"Tutor\"\n    } ,\n    \"title\": \"titlul postarii pt tutor\",\n    \"content\": \"continutul postarii pt tutor\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profesor-Grupe",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaHRpcHBpbmdwMSIsImlkIjo5MDIsImZpcnN0TmFtZSI6IkhhbGwiLCJsYXN0TmFtZSI6IlRpcHBpbmciLCJlbWFpbCI6IlRpcHBpbmciLCJzZXJpYWxOdW1iZXIiOiI5NDAwODczODNSU0wxMjAyODUiLCJyb2xlIjoicHJvZmVzc29yIiwiYWNhZGVtaWNSYW5rIjoiQXNzaXN0YW50IHByb2Zlc3NvciIsImdyb3VwSWQiOjJ9LCJpYXQiOjE1ODg2MTc5OTgsImV4cCI6MTU4OTIyMjc5OH0.JUym9WY06pfHv_eY-gKTFdc7TzUH9k5oY6pi02Qna8w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"isAnonymous\": false,\n    \"recipients\":\"Groupe\",\n    \"groupe\":{\n        \"year\":2,\n        \"letter\":\"A\",\n        \"number\":7\n    },\n    \"title\": \"titlul postarii groupe 2A7\",\n    \"content\": \"continutul postarii groupe 2A7\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profesor-Grupe(Anonim)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaHRpcHBpbmdwMSIsImlkIjo5MDIsImZpcnN0TmFtZSI6IkhhbGwiLCJsYXN0TmFtZSI6IlRpcHBpbmciLCJlbWFpbCI6IlRpcHBpbmciLCJzZXJpYWxOdW1iZXIiOiI5NDAwODczODNSU0wxMjAyODUiLCJyb2xlIjoicHJvZmVzc29yIiwiYWNhZGVtaWNSYW5rIjoiQXNzaXN0YW50IHByb2Zlc3NvciIsImdyb3VwSWQiOjJ9LCJpYXQiOjE1ODg2MTc5OTgsImV4cCI6MTU4OTIyMjc5OH0.JUym9WY06pfHv_eY-gKTFdc7TzUH9k5oY6pi02Qna8w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"isAnonymous\": true,\n    \"recipients\":\"Groupe\",\n    \"groupe\":{\n        \"year\":2,\n        \"letter\":\"A\",\n        \"number\":7\n    },\n    \"title\": \"titlul postarii groupe 2A7\",\n    \"content\": \"continutul postarii groupe 2A7\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
