@@ -1,0 +1,4 @@
+Eu a trebuit sa ma ocup cu testele pe professor_list. Am facut teste conectat ca mai multi studenti, mai multi profesori si toate au reusit cu succes. 
+Am incercat sa fac si de tip put sau post(chiar daca era de tip get) pentru toate tipurile de conturi ca sa vad daca ,,crapa" server-ul. 
+Mi-a dat path inexistente deci au fost teste cu succes. In schimb cand am vrut sa ma conectez ca admin si sa testez mi-a dat could not get any response.
+Acum chiar daca s-a scos logarea ca admin tot trebuia sa primesc un response asa ca am alertat problema pe grupul de QA si apoi pe cel General.
