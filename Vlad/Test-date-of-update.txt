@@ -1,4 +1,34 @@
-Eu a trebuit sa ma ocup cu testele pe professor_list. Am facut teste conectat ca mai multi studenti, mai multi profesori si toate au reusit cu succes. 
-Am incercat sa fac si de tip put sau post(chiar daca era de tip get) pentru toate tipurile de conturi ca sa vad daca ,,crapa" server-ul. 
-Mi-a dat path inexistente deci au fost teste cu succes. In schimb cand am vrut sa ma conectez ca admin si sa testez mi-a dat could not get any response.
-Acum chiar daca s-a scos logarea ca admin tot trebuia sa primesc un response asa ca am alertat problema pe grupul de QA si apoi pe cel General.
+---Realizat de Afrasinei Vlad _ identificator: ---
+
+---Nume fisier cod executat la testare: professor.ts
+---Locatia Fisier cod Executat: Final Project/Server/fiimentor/route/professor.ts
+
+
+Metodologia folosita pentru rulare (descrierea metodei de executie a testului):
+
+
+	*Utilizare software POSTMAN; 
+	*Serverul ?i clientul sunt rulate prin Visual Code pe proiectul clonat din repo-ul
+de Git al echipei; 
+	*Prin POSTMAN se fac requesturi assignate catre fiecare membru pe o ruta (în cazul de fa?a : ruta professor.ts)
+	*Am creat un request collection;
+	*În tab-ul Tests al fiecarui request se atribuie cod JavaScript care ruleaza odata cu requestul
+	*Observa?iile ?i return-urile testului se fac prin TestResults în urma trimiterii requesturilor înlan?uite
+	*Se face autentificare prin body-ul request-ului cu credentiale din BD, profesor si student --> se obtine un token
+	*acest Token e utilizat in requesturile pe ruta solicitata din aplicatie
+
+---Nume fisier cod executat la testare: test.postman_collection
+---Locatia Fisier cod Executat: https://github.com/Bogdan405/IP-A7-QA/tree/master/Vlad
+
+Testare data de: 05-05-2020
+		---Status test: trecut
+		---Probleme constatate:-
+		In schimb cand am vrut sa ma conectez ca admin si sa testez mi-a dat could not get any response.
+		Acum chiar daca s-a scos logarea ca admin tot trebuia sa primesc un response asa ca am alertat problema pe grupul de QA si apoi pe cel General.
+		---Alte observatii (viteza. Usurinta de utilizare):Mesajele de succes au aparut rapid iar procesul a fost usor.
+		Am facut teste conectat ca mai multi studenti, mai multi profesori si toate au reusit cu succes. 
+		Am incercat sa fac si de tip put sau post(chiar daca era de tip get) pentru toate tipurile de conturi ca sa vad daca ,,crapa" server-ul. 
+		Mi-a dat path inexistente deci au fost teste cu succes.
+
+---Nume fisier cod executat la testare: Esec.postman_collection
+---Locatia Fisier cod Executat: https://github.com/Bogdan405/IP-A7-QA/blob/master/Maria/06.05.2020/Esec.postman_collection.json
