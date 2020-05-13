@@ -1,0 +1,14 @@
+---Realizat de Manaila Andrei _ identificator: ---
+
+---Nume fisier cod executat la testare: post.ts
+---Locatia Fisier cod Executat:Final Project/Server/fiimentor/route/post.ts
+
+Metodologia folosita pentru rulare (descrierea metodei de executie a testului):
+    Am deschis HeidiSql si am creat o sesiune pentru baza de date.
+    In Visual Studio Code m-am conectat la Server (portul 8000) folosind comanda npm start,
+    iar apoi la client (portul 300) folosind comanda yarn dev.
+    In programul Postman am incarcat testele esuate si am inceput retestarea.
+
+Testare data de: 13-05-2020
+    ---Status test: trecut
+    ---Probleme constatate: La conectarea ca admin nu se primeste nici un raspuns

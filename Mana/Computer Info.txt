@@ -1,0 +1,4 @@
+---Aplicatii folosite: Visual Code, MariaDb, HeidiSql, Postman
+---Sistem de operare: Windows
+---Procesor: i5 
+---Memorie RAM (nr. de GB): 8

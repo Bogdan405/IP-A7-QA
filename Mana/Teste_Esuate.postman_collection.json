@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "d586c124-f33d-4571-bd77-4c003d87d29c",
+		"name": "Teste_Esuate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "In cazul in care vreau sa ma loghez ca admin nu primesc niciun status",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoicmt1bmF0cTMiLCJpZCI6OTQwLCJmaXJzdE5hbWUiOiJSYWZhZWxsbGUiLCJsYXN0TmFtZSI6Ikt1bmF0IiwiZW1haWwiOiJLdW5hdCIsInNlcmlhbE51bWJlciI6IjgzMDU0NjI2NFJTTDIwMTA5OCIsInJvbGUiOiJwcm9mZXNzb3IiLCJhY2FkZW1pY1JhbmsiOiJBc3NvY2lhdGUgcHJvZmVzc29yIn0sImlhdCI6MTU4ODY5NDA2NiwiZXhwIjoxNTg5Mjk4ODY2fQ.P4Sb1af7TVha0JlFmoMCLFRequ4g59VfN31n5MYW5uU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"edredgerl\",\r\n    \"password\": \"RDTfLhk\"\r\n} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
