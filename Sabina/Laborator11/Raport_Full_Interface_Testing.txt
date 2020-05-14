@@ -1,0 +1,64 @@
+---Realizat de Petrisor Sabina + identificator: --
+
+
+
+Testare data de: 12-05-2020
+
+Metodologia folosita pentru rulare (descrierea metodei de executie a testului):In Visual Studio Code m-am conectat la Server, portul 8000(folosind comanda npm start), iar apoi la Client, portul 3000(folosind comanda yarn dev). 
+  Dupa care am accesat prin intermediul browserului Opera, adresa http://localhost:3000 si m-am logat intr-un cont de student. Pentru inceput m-am axat pe aspectul paginilor, dupa care am incercat sa postez din contul de student cate un mesaj catre toate categoriile posibile din pagina "Creeaza o postare", iar mai apoi am verificat in pagina "Postari", daca respectivele mesaje apar in lista de postari.
+  La logarea in contul de student, mi-a aparut pagina Dashboard, unde in centru exista 2 posibilitati: crearea unei postari si vizualizarea postarilor. In partea stanga a ecranului am observat un meniu rapid, unde pot fi alese pagina Dashboard, cat si cele doua posibilitati, de creare si vizualizare a postarilor. 
+  Pentru inceput am accesat pagina "Creeaza o postare" din partea centrala a paginii. Dupa apasare apar trei categorii: Vizibilitate, Titlu postare si Continut postare. Initial am incercat sa postez un mesaj fara a completa nici unul dintre campuri, iar ca raspuns am primit eroare la "Continut postare": Continutul nu poate fi gol. Apoi am incercat sa postez cate un mesaj catre fiecare din categoriile existente.Am inserat cifra 0 in continutul fiecarui mesaj si am apasat butonul "Posteaza". Dupa apasarea butonului, poate aparea un mesaj de succes, sau nu poate aparea nimic, ceea ce reprezinta o problema. 
+  Dupa postarea mesajelor am accesat pagina "Postari" din meniul din stanga paginii si am observat ca anumite postari nu apar in lista postarilor.
+  In pagina "Postari", utilizatorul poate vizualiza postarile facute, poate cauta o anumita postare, iar mai jos, in lista de postari apar: titlul, autorul si data. Imediat dupa apar 6 pagini si un buton"NEXT".
+
+
+		---Probleme constatate: - La logare, in ambele rezolutii(1920x1080 si 1024x720) la introducerea unui username, lista de sugestii nu apare imediat dupa campul de introducere a username-ului, ci apare undeva in josul paginii
+                                                                            - Daca dorim, spre exemplu, sa postam un mesaj catre un profesor anume, iar imediat dupa sa postam un mesaj catre toti profesorii, am incercat apasarea din nou a campului "Vizibilitate" la categoria "Profesori", insa site-ul a ramas la alegerea unui singur profesor. Pentru aceasta a trebuit sa schimb vizibilitatea la o alta categorie posibila("Grup" sau "Toti utilizatorii"), iar apoi sa revin la "Profesori", ceea ce ingreuneaza usurinta navigarii
+ 
+                                                                          - Daca dorim, spre exemplu, sa postam un mesaj catre un anume profesor, iar imediat dupa sa postam un mesaj catre un grup de facultate, in campul "Selecteaza grup" ramane numele profesorului caruia i-am trimis mesaj anterior, ceea ce ingreuneaza usurinta navigarii. In general, daca schimbam vizibilitatea unei categorii care presupune completarea unor alte campuri, intr-o alta categorie care este la randul ei urmata de alte campuri de completat, in campul imediat urmator vizibilitatii ramane scrisul pentru postarea anterioara, si nu se goleste continutul acestuia
+
+                                                              - La introducerea titlului unei postari, ca si la introducerea unui username la logare, lista cu sugestii de titluri nu apare imediat dupa campul unde poate fi introdus numele titlului, ci apare undeva in josul paginii
+
+                                                               - La logarea intr-un cont de student nu pot fi postate mesaje catre categoria "Toti profesorii". In schimb, catre celelalte categorii, mesajele sunt postate
+                                                               - In pagina "Postari", in lista postarilor, nu este specificat catre ce categorie este trimis mesajul respectiv, ceea ce poate provoca confuzie
+                                                             
+                                                               - In pagina "Postari" nu poate fi selectata o anumita pagina, ci trebuie neaparat sa fie apasat butonul "NEXT". De asemenea, de la pagina 3, butonul "NEXT" dispare, si nu exista posibilitatea de a reveni la o pagina anterioara. Am incercat sa apas pe butonul de back al browserului, insa am fost redirectionata intr-o alta pagina anterioara. O alta problema intalnita la pagini, este faptul ca unele pagini pot fi apasate fara butonul "NEXT", spre exemplu, a 3-a, a 5-a si ultima pagina(cea cu numarul 6)
+                                                             - In pagina "Postari", daca este apasata pagina 3, practic este accesata pagina 2, iar pagina 5 acceseaza pagina 3
+
+                                                             - In pagina "Postari" nu apar in lista mesajele catre grupele de mentorat, grupele de facultate si toti utilizatorii
+
+                                                             - Campul de cautare a unei postari("Cauta o postare..." din pagina "Postari") nu poate fi utilizat
+
+                                                            - La texte mai lungi, in susul paginii la denumirea mesajelor(spre exemplu, daca un mesaj nu are titlu, titlul postarii este "Aceasta postare nu are titlu"), textul iese din zona colorata cu albastru deschis, si confera site-ului un aspect neplacut
+		
+		---Alte observatii (viteza. Usurinta de utilizare): Navigarea pe site este placuta si usoara. Pentru ambele rezolutii, de 1920x1080 si 1024x720 nu am gasit modificari in aspectul site-ului.
+
+
+
+Testare data de: 13-05-2020
+
+Metodologia folosita pentru rulare (descrierea metodei de executie a testului):In Visual Studio Code m-am conectat la Server, portul 8000(folosind comanda npm start), iar apoi la Client, portul 3000(folosind comanda yarn dev). 
+  Dupa care am accesat prin intermediul browserului Opera, adresa http://localhost:3000 si m-am logat intr-un cont al unui profesor. Am incercat sa postez mesaje catre toate categoriile existente si am verificat daca mesajele postate cu succes apar in lista postarilor din pagina "Postari"
+
+
+		---Probleme constatate: - Un user logat ca profesor poate posta un mesaj catre "Tutore", insa nu poate selecta catre care toture sa trimita mesajul
+                                                                           
+                                                                            - Un user logat ca profesor nu poate trimite mesaje catre toti profesorii
+ 
+                                                                           - In pagina "Postari", mesajele trimise de catre un profesor spre un grup de mentorat, un grup de facultate sau toti utilizatorii, nu apar in lista postarilor, chiar daca la postarea mesajului a aparut mesajul confirmarii trimiterii cu succes 
+
+
+Testare data de: 14-05-2020 
+
+Metodologia folosita pentru rulare (descrierea metodei de executie a testului):In Visual Studio Code m-am conectat la Server, portul 8000(folosind comanda npm start), iar apoi la Client, portul 3000(folosind comanda yarn dev). 
+  Dupa care am accesat prin intermediul browserului Opera, adresa http://localhost:3000. In josul paginii de logare, apare posibilitatea de creare a unui cont. Am accesat crearea unui cont, unde persoana care doreste sa creeze un cont trebuie sa introduca: nume, prenume, numar matricol, nume utilizator, parola, confirma parola si email
+
+
+		---Probleme constatate: - La crearea unui nou cont am completat toate campurile cu succes, in afara de ultimul camp, cel de e-mail, in care orice e-mail introdus nu este valid, deoarece "Email-ul nu corespunde domeniului", si astfel, crearea unui cont nu este posibila
+
+                                                                           - Daca se da refresh la site, pentru rezolutia 1920x1080, butonul de creare a unui nou cont ajunge sa fie in partea stanga a paginii, si nu in josul patratului de logare. Iar pentru rezolutia 1024x720, cand este dat refresh la site, nu apare decat un patrat din stanga sus a paginii, iar pagina devine inutilizabila. Insa, daca se inchide tabul actual si se redeschide un alt tab cu adresa site-ului, acesta isi revine la normal
+		
+		
+		---Alte observatii (viteza. Usurinta de utilizare): --
+
+		
