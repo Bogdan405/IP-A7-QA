@@ -1,0 +1,18 @@
+.modal-body{
+    font: 15px Spectral!important;
+    background: #F3F9FB!important;
+}
+
+.modal-header{
+    font: 15px Spectral!important;
+    background: #F3F9FB!important;
+}
+.logo{
+    height: 50px;
+}
+.logoPosts{
+    width: 40%;
+}
+.Profile {
+    width: 3vw;
+}
