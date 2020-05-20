@@ -1,0 +1,22 @@
+---Realizat de Codrin Donciu _ identificator: ---
+
+---Nume fisier cod executat la testare: -- Toată aplicația
+---Locatia Fisier cod Executat: -- Ultima versiune - 16/05
+
+
+Metodologia folosita pentru rulare (descrierea metodei de executie a testului):
+
+
+	*Serverul și clientul sunt rulate prin Visual Code pe proiectul clonat din repo-ul
+de Git al echipei; 
+	*Se merge către adresa localhost:3000
+	*M-am logat cu useri, cu rolul student, credentials preluate din baza de date
+
+Testare data de: 20-05-2020 
+		---Status test: trecut
+
+Full Front-End --> fără probleme majore detectate; 
+
+** pagina principală de login are formularul decentrat, pe rezoluții mari; pe rezoluții mici sau când fereastra este micșorată, formularul și logo-ul apar central
+** vezi screenshot Main_CenterBUG.png
+** concluzie : din punct de vedere front-end, nu există butoane nefuncționale sau aspecte grosolan inestetice.
