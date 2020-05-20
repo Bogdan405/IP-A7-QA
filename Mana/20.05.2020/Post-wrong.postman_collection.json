@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "3fdcb059-4d13-40e3-aea0-21c8ce81b0f7",
+		"name": "Post-wrong",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/auth/login",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaHRpcHBpbmdwMSIsImlkIjo5MDIsImZpcnN0TmFtZSI6IkhhbGwiLCJsYXN0TmFtZSI6IlRpcHBpbmciLCJlbWFpbCI6IlRpcHBpbmciLCJzZXJpYWxOdW1iZXIiOiI5NDAwODczODNSU0wxMjAyODUiLCJyb2xlIjoicHJvZmVzc29yIiwiYWNhZGVtaWNSYW5rIjoiQXNzaXN0YW50IHByb2Zlc3NvciIsImdyb3VwSWQiOjJ9LCJpYXQiOjE1ODg2MTc1NTYsImV4cCI6MTU4OTIyMjM1Nn0.nKRUchm58zBKVQ1TlW0NKL-ygYkVciNS9qG_slIW8Wg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isAnonymous\": false, //true, false\r\n    \"recipients\":\"Groupe\", //All, Professors, Groupe\r\n\r\n\r\n    // -- start -- toate optiunile pt recipients==\"Groupe\" (in final veti trimite doar una din cele 2)\r\n    \"groupe\":{ // postare pt grup de pe facultate (A7,B3,E2)\r\n        \"year\":2,\r\n        \"letter\":\"A\",\r\n        \"number\":7\r\n    }\r\n        //# Backend: vom face grupuri cu tituri 'reserved' printr-un script automat ce va rula la inceputul fiecarui an universitar\r\n\r\n    // -- end --\r\n    \"title\": \"titlul postarii\",\r\n    \"content\": \"continutul postarii\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

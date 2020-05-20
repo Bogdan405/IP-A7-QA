@@ -1,0 +1,431 @@
+{
+	"info": {
+		"_postman_id": "cd4bdcd3-df31-45da-84a1-5db6953aff52",
+		"name": "Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "teste reusite",
+			"item": [
+				{
+					"name": "afisare liste logat ca profesor",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaHRpcHBpbmdwMSIsImlkIjo5MDIsImZpcnN0TmFtZSI6IkhhbGwiLCJsYXN0TmFtZSI6IlRpcHBpbmciLCJlbWFpbCI6IlRpcHBpbmciLCJzZXJpYWxOdW1iZXIiOiI5NDAwODczODNSU0wxMjAyODUiLCJyb2xlIjoicHJvZmVzc29yIiwiYWNhZGVtaWNSYW5rIjoiQXNzaXN0YW50IHByb2Zlc3NvciIsImdyb3VwSWQiOjJ9LCJpYXQiOjE1ODg2OTE2NDQsImV4cCI6MTU4OTI5NjQ0NH0.SDQ0KtgKLKrDxC5fDNrMEmKUI1QWLv-BP7UtbUmLi3A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"htippingp1\",\r\n    \"password\": \"Zy1T1Bok\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/professor/professor_list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"professor",
+								"professor_list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "afisare liste logat ca profesor2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiaGdyZWdvcm93aWN6cmUiLCJpZCI6OTg3LCJmaXJzdE5hbWUiOiJIb3JhdGlvIiwibGFzdE5hbWUiOiJHcmVnb3Jvd2ljeiIsImVtYWlsIjoiR3JlZ29yb3dpY3oiLCJzZXJpYWxOdW1iZXIiOiIxNzU3MDIwMjlFU0wxODY0ODciLCJyb2xlIjoicHJvZmVzc29yIiwiYWNhZGVtaWNSYW5rIjoiUHJvZmVzc29yIn0sImlhdCI6MTU4ODY5MjE2MSwiZXhwIjoxNTg5Mjk2OTYxfQ.NORW1YMSaoKzh-BYCHZgqScuQYtn0OoRUOPJJmWsXcs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"hgregorowiczre\",\r\n    \"password\": \"yRURXTF5MgVS\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/professor/professor_list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"professor",
+								"professor_list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pentru post nu crapa, zice ca nu exista calea ceea ce este bine",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoid2xldHRpbmd0b25yaCIsImlkIjo5OTAsImZpcnN0TmFtZSI6IldoaXRuZXkiLCJsYXN0TmFtZSI6IkxldHRpbmd0b24iLCJlbWFpbCI6IkxldHRpbmd0b24iLCJzZXJpYWxOdW1iZXIiOiI1OTEwODk2MDZSU0w2MTc1MjMiLCJyb2xlIjoicHJvZmVzc29yIiwiYWNhZGVtaWNSYW5rIjoiTGVjdHVyZXIifSwiaWF0IjoxNTg4NjkyMzY3LCJleHAiOjE1ODkyOTcxNjd9.nLSKKTpy0-ACTOZnxBLF89sTYs9ftgUtkoOSgM5Y_-M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"wlettingtonrh\",\r\n    \"password\": \"4E2NmgNu\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/professor/professor_list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"professor",
+								"professor_list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pentru put nu crapa, zice ca nu exista calea ceea ce este bine",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoid2xldHRpbmd0b25yaCIsImlkIjo5OTAsImZpcnN0TmFtZSI6IldoaXRuZXkiLCJsYXN0TmFtZSI6IkxldHRpbmd0b24iLCJlbWFpbCI6IkxldHRpbmd0b24iLCJzZXJpYWxOdW1iZXIiOiI1OTEwODk2MDZSU0w2MTc1MjMiLCJyb2xlIjoicHJvZmVzc29yIiwiYWNhZGVtaWNSYW5rIjoiTGVjdHVyZXIifSwiaWF0IjoxNTg4NjkyMzY3LCJleHAiOjE1ODkyOTcxNjd9.nLSKKTpy0-ACTOZnxBLF89sTYs9ftgUtkoOSgM5Y_-M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"wlettingtonrh\",\r\n    \"password\": \"4E2NmgNu\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/professor/professor_list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"professor",
+								"professor_list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "accesul de a vea lista de catre student",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiZGxldnlrZyIsImlkIjo3MzcsImZpcnN0TmFtZSI6IkR1bmMiLCJsYXN0TmFtZSI6IkxldnkiLCJlbWFpbCI6IkxldnkiLCJzZXJpYWxOdW1iZXIiOiI1OTU1NDQ4NjRFU0w3MzIyMDIiLCJyb2xlIjoic3R1ZGVudCIsImdyb3VwIjoiRTEiLCJ5ZWFyIjoyLCJ0dXRvcklkIjo5Mjl9LCJpYXQiOjE1ODg2OTI3NjIsImV4cCI6MTU4OTI5NzU2Mn0.BFsckXLy1FSWs7nqZxIUaFudvVyExxfRuet4wyK3gB0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"dlevykg\",\r\n    \"password\": \"sNd8kRCC\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/professor/professor_list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"professor",
+								"professor_list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "accesul de a vea lista de catre student2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiZGxldnlrZyIsImlkIjo3MzcsImZpcnN0TmFtZSI6IkR1bmMiLCJsYXN0TmFtZSI6IkxldnkiLCJlbWFpbCI6IkxldnkiLCJzZXJpYWxOdW1iZXIiOiI1OTU1NDQ4NjRFU0w3MzIyMDIiLCJyb2xlIjoic3R1ZGVudCIsImdyb3VwIjoiRTEiLCJ5ZWFyIjoyLCJ0dXRvcklkIjo5Mjl9LCJpYXQiOjE1ODg2OTI3NjIsImV4cCI6MTU4OTI5NzU2Mn0.BFsckXLy1FSWs7nqZxIUaFudvVyExxfRuet4wyK3gB0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"tpickettk8\",\r\n    \"password\": \"xeWdRR\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/professor/professor_list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"professor",
+								"professor_list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "accesul de a vea lista de catre student3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiZm9seWZhdGpvIiwiaWQiOjcwOSwiZmlyc3ROYW1lIjoiRmxvcmlhIiwibGFzdE5hbWUiOiJPbHlmYXQiLCJlbWFpbCI6Ik9seWZhdCIsInNlcmlhbE51bWJlciI6Ijg2OTQwMzc2M0VTTDYxNjA2MyIsInJvbGUiOiJzdHVkZW50IiwiZ3JvdXAiOiJFMSIsInllYXIiOjIsInR1dG9ySWQiOjkyMH0sImlhdCI6MTU4ODY5MzIzMywiZXhwIjoxNTg5Mjk4MDMzfQ.o_hOywPdbn0jg_086_qQe5oMTXrXc9-lZVAFrV1BoGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"folyfatjo\",\r\n    \"password\": \"5ISlomZI\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/professor/professor_list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"professor",
+								"professor_list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pe post nu crapa",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiZm9seWZhdGpvIiwiaWQiOjcwOSwiZmlyc3ROYW1lIjoiRmxvcmlhIiwibGFzdE5hbWUiOiJPbHlmYXQiLCJlbWFpbCI6Ik9seWZhdCIsInNlcmlhbE51bWJlciI6Ijg2OTQwMzc2M0VTTDYxNjA2MyIsInJvbGUiOiJzdHVkZW50IiwiZ3JvdXAiOiJFMSIsInllYXIiOjIsInR1dG9ySWQiOjkyMH0sImlhdCI6MTU4ODY5MzIzMywiZXhwIjoxNTg5Mjk4MDMzfQ.o_hOywPdbn0jg_086_qQe5oMTXrXc9-lZVAFrV1BoGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"folyfatjo\",\r\n    \"password\": \"5ISlomZI\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/professor/professor_list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"professor",
+								"professor_list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pe put nu crapa",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiZm9seWZhdGpvIiwiaWQiOjcwOSwiZmlyc3ROYW1lIjoiRmxvcmlhIiwibGFzdE5hbWUiOiJPbHlmYXQiLCJlbWFpbCI6Ik9seWZhdCIsInNlcmlhbE51bWJlciI6Ijg2OTQwMzc2M0VTTDYxNjA2MyIsInJvbGUiOiJzdHVkZW50IiwiZ3JvdXAiOiJFMSIsInllYXIiOjIsInR1dG9ySWQiOjkyMH0sImlhdCI6MTU4ODY5MzIzMywiZXhwIjoxNTg5Mjk4MDMzfQ.o_hOywPdbn0jg_086_qQe5oMTXrXc9-lZVAFrV1BoGw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"folyfatjo\",\r\n    \"password\": \"5ISlomZI\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/professor/professor_list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"professor",
+								"professor_list"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "In cazul in care vreau sa ma loghez ca admin nu primesc niciun status",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoicmt1bmF0cTMiLCJpZCI6OTQwLCJmaXJzdE5hbWUiOiJSYWZhZWxsbGUiLCJsYXN0TmFtZSI6Ikt1bmF0IiwiZW1haWwiOiJLdW5hdCIsInNlcmlhbE51bWJlciI6IjgzMDU0NjI2NFJTTDIwMTA5OCIsInJvbGUiOiJwcm9mZXNzb3IiLCJhY2FkZW1pY1JhbmsiOiJBc3NvY2lhdGUgcHJvZmVzc29yIn0sImlhdCI6MTU4ODY5NDA2NiwiZXhwIjoxNTg5Mjk4ODY2fQ.P4Sb1af7TVha0JlFmoMCLFRequ4g59VfN31n5MYW5uU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"edredgerl\",\r\n    \"password\": \"RDTfLhk\"\r\n} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

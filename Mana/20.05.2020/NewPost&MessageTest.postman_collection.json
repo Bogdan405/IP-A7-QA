@@ -1,0 +1,392 @@
+{
+	"info": {
+		"_postman_id": "62fa64b8-7733-454c-9426-fcf57f50a0fb",
+		"name": "NewPost&MessageTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Postare-Elev->Profesor1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoicmFibGUzIiwiaWQiOjQsImZpcnN0TmFtZSI6IlJhbmRvbGYiLCJsYXN0TmFtZSI6IkFibGUiLCJlbWFpbCI6IkFibGUiLCJzZXJpYWxOdW1iZXIiOiI3NTY5NzA2MzFSU0wyMTM4NjIiLCJyb2xlIjoic3R1ZGVudCIsImdyb3VwIjoiQTMiLCJ5ZWFyIjoyLCJ0dXRvcklkIjo5MjR9LCJpYXQiOjE1ODk5NzQyMDIsImV4cCI6MTU5MDU3OTAwMn0.FQyUNl1cWPPswHtvIX-H2CGLZJ6boR8jLxhHK8sQ85g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isAnonymous\": false,\r\n    \"recipients\":\"Professors\",\r\n\r\n    \"professors\":{\r\n\t\t\"recipient\":\"Professor\",\r\n\t\t\"professorId\":1\r\n    },\r\n\r\n    \"title\": \"Test postare elev -> Prof\",\r\n    \"content\": \"Test postare elev -> Prof\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				},
+				"description": "200 Ok\ntestul este reusit"
+			},
+			"response": []
+		},
+		{
+			"name": "Postare-Elev-All1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoicmFibGUzIiwiaWQiOjQsImZpcnN0TmFtZSI6IlJhbmRvbGYiLCJsYXN0TmFtZSI6IkFibGUiLCJlbWFpbCI6IkFibGUiLCJzZXJpYWxOdW1iZXIiOiI3NTY5NzA2MzFSU0wyMTM4NjIiLCJyb2xlIjoic3R1ZGVudCIsImdyb3VwIjoiQTMiLCJ5ZWFyIjoyLCJ0dXRvcklkIjo5MjR9LCJpYXQiOjE1ODk5NzQyMDIsImV4cCI6MTU5MDU3OTAwMn0.FQyUNl1cWPPswHtvIX-H2CGLZJ6boR8jLxhHK8sQ85g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"isAnonymous\":true,\n\t\"recipients\":\"All\",\n\t\"title\":\"Titlu postare reusit\",\n\t\"content\":\"Continut postare reusit\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				},
+				"description": "400 bad request\nRezultatul este reusit"
+			},
+			"response": []
+		},
+		{
+			"name": "Postare-Elev->Grupa Mentorat",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoicmFibGUzIiwiaWQiOjQsImZpcnN0TmFtZSI6IlJhbmRvbGYiLCJsYXN0TmFtZSI6IkFibGUiLCJlbWFpbCI6IkFibGUiLCJzZXJpYWxOdW1iZXIiOiI3NTY5NzA2MzFSU0wyMTM4NjIiLCJyb2xlIjoic3R1ZGVudCIsImdyb3VwIjoiQTMiLCJ5ZWFyIjoyLCJ0dXRvcklkIjo5MjR9LCJpYXQiOjE1ODk5NzQyMDIsImV4cCI6MTU5MDU3OTAwMn0.FQyUNl1cWPPswHtvIX-H2CGLZJ6boR8jLxhHK8sQ85g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isAnonymous\": false,\r\n    \"recipients\":\"Groupe\",\r\n\r\n    \"groupe\":{ \r\n\t\t\"groupeId\":17\r\n    },\r\n\r\n    \"title\": \"Titlu postare test mentorat\",\r\n    \"content\": \"Continut postare grup mentorat\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				},
+				"description": "201 Created \nPostarea a fost creata cu succes"
+			},
+			"response": []
+		},
+		{
+			"name": "Postare-Elev-Tutore-Anonim",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoicmFibGUzIiwiaWQiOjQsImZpcnN0TmFtZSI6IlJhbmRvbGYiLCJsYXN0TmFtZSI6IkFibGUiLCJlbWFpbCI6IkFibGUiLCJzZXJpYWxOdW1iZXIiOiI3NTY5NzA2MzFSU0wyMTM4NjIiLCJyb2xlIjoic3R1ZGVudCIsImdyb3VwIjoiQTMiLCJ5ZWFyIjoyLCJ0dXRvcklkIjo5MjR9LCJpYXQiOjE1ODk5NzQyMDIsImV4cCI6MTU5MDU3OTAwMn0.FQyUNl1cWPPswHtvIX-H2CGLZJ6boR8jLxhHK8sQ85g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isAnonymous\": true,\r\n    \"recipients\":\"Professors\", \r\n\r\n    \"professors\":{ \r\n\t\t\"recipient\":\"Tutor\"\r\n    },\r\n\r\n    \"title\": \"Titlu postare anonima\",\r\n    \"content\": \"Continut postare anonima\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				},
+				"description": "201 Created \nPostarea a fost creata cu succes"
+			},
+			"response": []
+		},
+		{
+			"name": "Postare-Elev->TotiProfesorii-Anonim",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoicmFibGUzIiwiaWQiOjQsImZpcnN0TmFtZSI6IlJhbmRvbGYiLCJsYXN0TmFtZSI6IkFibGUiLCJlbWFpbCI6IkFibGUiLCJzZXJpYWxOdW1iZXIiOiI3NTY5NzA2MzFSU0wyMTM4NjIiLCJyb2xlIjoic3R1ZGVudCIsImdyb3VwIjoiQTMiLCJ5ZWFyIjoyLCJ0dXRvcklkIjo5MjR9LCJpYXQiOjE1ODk5NzQyMDIsImV4cCI6MTU5MDU3OTAwMn0.FQyUNl1cWPPswHtvIX-H2CGLZJ6boR8jLxhHK8sQ85g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isAnonymous\": true, \r\n    \"recipients\":\"Professors\",\r\n\r\n    \"professors\":{ \r\n\t\t\"recipient\":\"All\"\r\n    },\r\n\r\n    \"title\": \"Miau\",\r\n    \"content\": \"Miau tot ce vreau\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				},
+				"description": "201 Created\nPostarea a fost creata cu succes\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Postare-Profesor->Profesor",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoic3NjdWZmaGFtcmEiLCJpZCI6OTgzLCJmaXJzdE5hbWUiOiJTaGFuZGVlIiwibGFzdE5hbWUiOiJTY3VmZmhhbSIsImVtYWlsIjoiU2N1ZmZoYW0iLCJzZXJpYWxOdW1iZXIiOiI0MjkzMzM4MDhFU0w3NjQ5NzAiLCJyb2xlIjoicHJvZmVzc29yIiwiYWNhZGVtaWNSYW5rIjoiQXNzb2NpYXRlIHByb2Zlc3NvciJ9LCJpYXQiOjE1ODk5NzcxOTIsImV4cCI6MTU5MDU4MTk5Mn0.C696MstxM4mZ2rbV79B19LZtOU4qNrDCQZ-iw_LYleA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "201 Created\nPostarea a fost creata cu succes"
+			},
+			"response": []
+		},
+		{
+			"name": "Postare-Profesor->All",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoic3NjdWZmaGFtcmEiLCJpZCI6OTgzLCJmaXJzdE5hbWUiOiJTaGFuZGVlIiwibGFzdE5hbWUiOiJTY3VmZmhhbSIsImVtYWlsIjoiU2N1ZmZoYW0iLCJzZXJpYWxOdW1iZXIiOiI0MjkzMzM4MDhFU0w3NjQ5NzAiLCJyb2xlIjoicHJvZmVzc29yIiwiYWNhZGVtaWNSYW5rIjoiQXNzb2NpYXRlIHByb2Zlc3NvciJ9LCJpYXQiOjE1ODk5NzcxOTIsImV4cCI6MTU5MDU4MTk5Mn0.C696MstxM4mZ2rbV79B19LZtOU4qNrDCQZ-iw_LYleA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"isAnonymous\":true,\n\t\"recipients\":\"All\",\n\t\"title\":\"Titlu postare reusit\",\n\t\"content\":\"Continut postare reusit\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				},
+				"description": "400 Bad request\nCred ca a avut succes"
+			},
+			"response": []
+		},
+		{
+			"name": "Postare-Profesor->GrupaMentorat",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoic3NjdWZmaGFtcmEiLCJpZCI6OTgzLCJmaXJzdE5hbWUiOiJTaGFuZGVlIiwibGFzdE5hbWUiOiJTY3VmZmhhbSIsImVtYWlsIjoiU2N1ZmZoYW0iLCJzZXJpYWxOdW1iZXIiOiI0MjkzMzM4MDhFU0w3NjQ5NzAiLCJyb2xlIjoicHJvZmVzc29yIiwiYWNhZGVtaWNSYW5rIjoiQXNzb2NpYXRlIHByb2Zlc3NvciJ9LCJpYXQiOjE1ODk5NzcxOTIsImV4cCI6MTU5MDU4MTk5Mn0.C696MstxM4mZ2rbV79B19LZtOU4qNrDCQZ-iw_LYleA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isAnonymous\": false,\r\n    \"recipients\":\"Groupe\",\r\n\r\n    \"groupe\":{ \r\n\t\t\"groupeId\":17\r\n    },\r\n\r\n    \"title\": \"Titlu postare test mentorat\",\r\n    \"content\": \"Continut postare grup mentorat\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				},
+				"description": "201 Created\nPostarea a fost creata cu succes"
+			},
+			"response": []
+		},
+		{
+			"name": "Postare-Profesor->Tutore",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoic3NjdWZmaGFtcmEiLCJpZCI6OTgzLCJmaXJzdE5hbWUiOiJTaGFuZGVlIiwibGFzdE5hbWUiOiJTY3VmZmhhbSIsImVtYWlsIjoiU2N1ZmZoYW0iLCJzZXJpYWxOdW1iZXIiOiI0MjkzMzM4MDhFU0w3NjQ5NzAiLCJyb2xlIjoicHJvZmVzc29yIiwiYWNhZGVtaWNSYW5rIjoiQXNzb2NpYXRlIHByb2Zlc3NvciJ9LCJpYXQiOjE1ODk5NzcxOTIsImV4cCI6MTU5MDU4MTk5Mn0.C696MstxM4mZ2rbV79B19LZtOU4qNrDCQZ-iw_LYleA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isAnonymous\": true,\r\n    \"recipients\":\"Professors\", \r\n\r\n    \"professors\":{ \r\n\t\t\"recipient\":\"Tutor\"\r\n    },\r\n\r\n    \"title\": \"Titlu postare anonima\",\r\n    \"content\": \"Continut postare anonima\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				},
+				"description": "201 Created\nPostarea a fost creata cu succes"
+			},
+			"response": []
+		},
+		{
+			"name": "Postare-Profesor-TotiProfesorii",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoic3NjdWZmaGFtcmEiLCJpZCI6OTgzLCJmaXJzdE5hbWUiOiJTaGFuZGVlIiwibGFzdE5hbWUiOiJTY3VmZmhhbSIsImVtYWlsIjoiU2N1ZmZoYW0iLCJzZXJpYWxOdW1iZXIiOiI0MjkzMzM4MDhFU0w3NjQ5NzAiLCJyb2xlIjoicHJvZmVzc29yIiwiYWNhZGVtaWNSYW5rIjoiQXNzb2NpYXRlIHByb2Zlc3NvciJ9LCJpYXQiOjE1ODk5NzcxOTIsImV4cCI6MTU5MDU4MTk5Mn0.C696MstxM4mZ2rbV79B19LZtOU4qNrDCQZ-iw_LYleA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isAnonymous\": true, \r\n    \"recipients\":\"Professors\",\r\n\r\n    \"professors\":{ \r\n\t\t\"recipient\":\"All\"\r\n    },\r\n\r\n    \"title\": \"Miau\",\r\n    \"content\": \"Miau tot ce vreau\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				},
+				"description": "201 Created\nPostarea a fost creata cu succes"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

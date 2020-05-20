@@ -1,0 +1,214 @@
+{
+	"info": {
+		"_postman_id": "68b7a2e0-e76e-4629-ab1b-83679ac43516",
+		"name": "Requesturi_Esuate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Student_GrupMentorat_DinCareNuFaceParte",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiZ2dlcmFsZGluaXQiLCJpZCI6MzAsImZpcnN0TmFtZSI6IkdhdnJhIiwibGFzdE5hbWUiOiJHZXJhbGRpbmkiLCJlbWFpbCI6IkdlcmFsZGluaSIsInNlcmlhbE51bWJlciI6IjM1NzUxODYyOFJTTDY0NTQ1OCIsInJvbGUiOiJzdHVkZW50IiwiZ3JvdXAiOiJBNyIsInllYXIiOjMsInR1dG9ySWQiOjkxN30sImlhdCI6MTU4ODc1MTk2MywiZXhwIjoxNTg5MzU2NzYzfQ.DAk6dArtkp7Cwm-7PWNRil25AIKkOeeJS5X2e-lwakc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isAnonymous\": false, \r\n    \"recipients\":\"Groupe\", \r\n\r\n    \"groupe\":{ \r\n\t\t\"groupeId\":1\r\n    },\r\n\r\n    \"title\": \"titlu postare pentru grupe de mentorat din care nu face parte(id 1, studentul facand parte din grupul cu id 17)\",\r\n    \"content\": \"continut postare pentru grupe de mentorat din care nu face parte(id 1, studentul facand parte din grupul cu id 17)\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				},
+				"description": "La incercarea postarii unui mesaj catre un grup de mentorat, de catre un student care nu face parte din acel grup, programul returneaza statusul 200 OK, deci esec."
+			},
+			"response": []
+		},
+		{
+			"name": "Student_GrupeFacultateMentorat_GrupaNeselectata",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiZ2dlcmFsZGluaXQiLCJpZCI6MzAsImZpcnN0TmFtZSI6IkdhdnJhIiwibGFzdE5hbWUiOiJHZXJhbGRpbmkiLCJlbWFpbCI6IkdlcmFsZGluaSIsInNlcmlhbE51bWJlciI6IjM1NzUxODYyOFJTTDY0NTQ1OCIsInJvbGUiOiJzdHVkZW50IiwiZ3JvdXAiOiJBNyIsInllYXIiOjMsInR1dG9ySWQiOjkxN30sImlhdCI6MTU4ODc1MTk2MywiZXhwIjoxNTg5MzU2NzYzfQ.DAk6dArtkp7Cwm-7PWNRil25AIKkOeeJS5X2e-lwakc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isAnonymous\": false,\r\n    \"recipients\":\"Groupe\",\r\n\r\n    \"title\": \"\",\r\n    \"content\": \"0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				},
+				"description": "Un student logat poate posta un mesaj catre un grup de facultate sau un grup de mentorat, fara insa a selecta nimic din urmatoarele campuri, anume: grupa, anul etc. Asadar, testul a esuat."
+			},
+			"response": []
+		},
+		{
+			"name": "Student_TotiUtilizatorii_CaractereStraine",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiZ2dlcmFsZGluaXQiLCJpZCI6MzAsImZpcnN0TmFtZSI6IkdhdnJhIiwibGFzdE5hbWUiOiJHZXJhbGRpbmkiLCJlbWFpbCI6IkdlcmFsZGluaSIsInNlcmlhbE51bWJlciI6IjM1NzUxODYyOFJTTDY0NTQ1OCIsInJvbGUiOiJzdHVkZW50IiwiZ3JvdXAiOiJBNyIsInllYXIiOjMsInR1dG9ySWQiOjkxN30sImlhdCI6MTU4ODc1MTk2MywiZXhwIjoxNTg5MzU2NzYzfQ.DAk6dArtkp7Cwm-7PWNRil25AIKkOeeJS5X2e-lwakc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"isAnonymous\":false,\n\t\"recipients\":\"All\",\n\t\"title\":\"titlul postarii All\",\n\t\"content\":\"안녕하세요!\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				},
+				"description": "Un student logat poate trimite catre toti ceilalti utilizatori mesaje ce contin caractere straine, in testul actual, caractere coreene, fara a primi mesaj de eroare. In concluzie, testul a esuat."
+			},
+			"response": []
+		},
+		{
+			"name": "Student_Postare_VizibilitateNeselectata",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiZ2dlcmFsZGluaXQiLCJpZCI6MzAsImZpcnN0TmFtZSI6IkdhdnJhIiwibGFzdE5hbWUiOiJHZXJhbGRpbmkiLCJlbWFpbCI6IkdlcmFsZGluaSIsInNlcmlhbE51bWJlciI6IjM1NzUxODYyOFJTTDY0NTQ1OCIsInJvbGUiOiJzdHVkZW50IiwiZ3JvdXAiOiJBNyIsInllYXIiOjMsInR1dG9ySWQiOjkxN30sImlhdCI6MTU4ODc1MTk2MywiZXhwIjoxNTg5MzU2NzYzfQ.DAk6dArtkp7Cwm-7PWNRil25AIKkOeeJS5X2e-lwakc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isAnonymous\": false,\r\n\r\n    \"title\": \"titlul postarii\",\r\n    \"content\": \"continutul postarii\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				},
+				"description": "Unui student logat ii este posibil sa trimita un mesaj fara a selecta nimic din primul camp(\"Vizibilitate\"), programul ruland normal. Deci, testul a esuat."
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJuYW1lIjoiZ2dlcmFsZGluaXQiLCJpZCI6MzAsImZpcnN0TmFtZSI6IkdhdnJhIiwibGFzdE5hbWUiOiJHZXJhbGRpbmkiLCJlbWFpbCI6IkdlcmFsZGluaSIsInNlcmlhbE51bWJlciI6IjM1NzUxODYyOFJTTDY0NTQ1OCIsInJvbGUiOiJzdHVkZW50IiwiZ3JvdXAiOiJBNyIsInllYXIiOjMsInR1dG9ySWQiOjkxN30sImlhdCI6MTU4ODc1MTk2MywiZXhwIjoxNTg5MzU2NzYzfQ.DAk6dArtkp7Cwm-7PWNRil25AIKkOeeJS5X2e-lwakc",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "968b77e1-dc0e-4594-a697-60aa9777cc69",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "44ebb883-366c-47dc-b1ae-9778ca3680ed",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
